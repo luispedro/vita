@@ -1,0 +1,272 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\definecolor{lightg}{HTML}{999999}
+\definecolor{medg}{HTML}{666666}
+\definecolor{darkg}{HTML}{333333}
+
+\usepackage{wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage{cmbright}
+%FONTS
+\usepackage{fontspec}
+\font\head="Qlassik Medium:letterspace=4" at 34pt % http://www.dafont.com/qlassik.font
+\font\subhead="Qlassik Medium" at 15pt
+\font\subsubhead="Qlassik Medium" at 15pt
+\font\Quote="Linux Libertine O Bold Italic:mapping=tex-text" at 16pt
+\font\Text="Linux Libertine O" at 11pt
+\font\Textit="Linux Libertine O/I:+onum" at 11pt 	% /I select Italic
+\font\Textblack="Linux Libertine O/BI" at 9pt 	% /BI select Bold Italic 
+\font\Textsc="Linux Libertine O:+smcp" at 11pt 	% +smcp selects Small Caps
+\font\wdate="Linux Libertine O:+smcp, letterspace=4,+onum" at 9pt % +onum old style numerals
+
+\renewcommand\section[1]{%
+    \par\vspace{2em}%
+    {\subhead #1}%
+    \par\vspace{1em}%
+}
+\renewcommand\subsection[1]{%
+    \par\vspace{.1em}%
+    {\hspace{1em}\subsubhead #1}%
+    \par\vspace{.2em}%
+}
+\newcommand\cvitem[2][\relax]{%
+    \par\vspace{.8em}
+    \if\relax#1\else{\Textsc #1}\hspace{1em}\fi%
+    {\Textblack #2}%
+    \par\vspace{.4em}
+}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref}  % PDF 
+
+%Styling Itemizations
+\usepackage{enumitem}
+\renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"F6B9}}}
+\begin{document}
+
+\parindent=0cm
+
+\begin{minipage}[t]{0.60\linewidth}%
+\head \textcolor{darkg}{LUIS PEDRO COELHO}
+
+\begin{minipage}[t]{0.70\linewidth}%
+\raggedright\Quote\color{darkg} A computational biologist interested in the cell biology the malaria Plasmodium
+\end{minipage}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.26\textwidth}%
+\vspace{-2.2em}
+
+\Text \textcolor{medg}{
+Carnegie Mellon University\\
+5000 Forbes Ave, GHC 7405\\
+Pittsburgh, PA (USA)}\\
+\textcolor{darkg}{phone} : (+1)-412-330-8306\\
+\textcolor{darkg}{email} : lpc@cmu.edu
+\end{minipage}
+
+\vspace{2.3em}
+
+\section{Research Highlights}
+
+\cvitem[2010]{Unsupervised Subcellular Pattern Unmixing}
+Many proteins are located in more than one organelle simultaneously, a
+phenomenon known as a mixed pattern (the pattern corresponding to a single
+organelle being a pure pattern). Recovering the organelle structure from image
+data where mixed patterns are present is known as the unsupervised unmixing
+problem in subcellular location. I developed new models for
+solving this problem. My solution was chosen as one of the highlights of 2010
+in computational biology by the journal \emph{Nature}.
+
+\cvitem[2008-2010]{Structure Literature Image Finder (SLIF)}
+SLIF is a search engine that indexes biomedical papers with their images. In
+this project, I was responsible for the computer vision aspects of the
+processing pipeline. I also handled much of the integration effort of the
+several components and coordinated the preparation of the multi-author
+publications that resulted from the effort. This project was a finalist in the
+Elsevier Grand Challenge (4 teams out of 70 were chosen for the final). I
+represented our team in both the final and the semi-final of this competition.
+
+\section{Education}
+
+\cvitem[Summer 2011]{PhD in computational biology, Carnegie Mellon University}
+Advised by Prof.\ Robert F. Murphy, I presented new automated techniques for
+the proteome-wide subcellular localisation of proteins in mouse cells based on
+fluorescent images and other data
+
+\cvitem[2006]{MS in computer science, Instituto Superior T\'ecnico (Technical University Lisbon)}
+Advised by Prof.\ Arlindo Oliveira, I analysed the theoretical limitations of
+extracting information from noisy data.
+
+\cvitem[2004]{BS in computer science, Instituto Superior T\'ecnico (Technical University Lisbon)}
+One year spent in the Technical University of Vienna as an exchange student.
+Finished top my class.
+
+\section{Teaching Experience}
+
+\cvitem[2011]{Practical Tutorial in Lisbon Machine Learning Summer School}
+
+\cvitem[2009]{Programming for Scientists}
+I designed and taught a semester-long course on computer programming for
+scientists at Carnegie Mellon University. This course was not based on any
+existing course at CMU, but resulted from a need I identified in biomedical or
+physical scientists who, as part of their job, have a need to program.
+
+\cvitem[2008]{Teaching Assistant for Laboratory Methods for Computational Biologists (CMU)}
+\cvitem[2005]{Introduction to Computers Course in Cac\'em}
+I co-developed and co-taught an introductory course in computer usage in
+Cac\'em, an underprivileged neighbourhood near Lisbon. This was pro-bono work.
+
+\cvitem[2005]{Teaching Assistant for Decision Support Systems (IST)}
+
+\section{Other Research Projects}
+
+\cvitem[2005-2006]{Approximate String Indexing}
+An approximate string index is a data structure that allows for fast string
+queries where the matches may be approximate. I developed one such index, the
+\emph{dotted suffix tree}.
+
+\section{Honours \&\ Awards}
+
+\cvitem[2007--2011]{PhD. Scholarship from Portuguese Science Foundation}
+Grant for PhD.\ studies in the United States.
+
+\cvitem[2009]{Research Excellence Award}
+From the Joint Carnegie Mellon--University of Pittsburgh Ph.D. Program in Computational Biology.
+
+\cvitem[2008]{Academic Excellence Award}
+From the Joint Carnegie Mellon--University of Pittsburgh Ph.D. Program in Computational Biology.
+
+\cvitem[2006]{Fulbright Fellow}
+Grant for PhD.\ studies in the United States.
+
+\cvitem[2005--2006]{Scholarship from Portuguese Science Foundation}
+Grant for introduction to research.
+
+\cvitem[2001]{Academic Excellence Award}
+From Instituto Superior T\'ecnico.
+
+\section{Organisational Experience}
+
+\cvitem[2010]{Local Committee for Portuguese-American Postgraduate Society National Forum}
+I headed the local organising committee for this the 2010 edition of this
+annual event. It took place in Pittsburgh and included, as speakers,
+cabinet-level Portuguese government officials, renowned researchers, artists,
+as well as participants from all around the US.
+
+\cvitem[2010]{Beira Project}
+With Rita Reis, I started the Beira Project. We spent two months as volunteers
+in Beira, Mozambique. We had previously held several successful fund-raising
+activies for organisations in Mozambique, raising almost 4000 USD.
+
+\cvitem[2002--2004]{Producer for IST Theatre Group}
+I acted as the producer for the IST Theatre Group, which is one of the top
+university theatre groups in Portugal. We participated in several festival,
+including international festivals. As producer, my activities included
+fund-raising and management.
+
+\section{Other Experience}
+
+\cvitem{Open Source Software}
+I have released several important open source packages related to my research
+work, namely in the areas of machine learning and computer vision. Previously,
+I was a \textsc{kde} developer. The \textsc{kde} project is one of the largest
+open-source projects in the world with several hundred developers and over one
+million lines of code.
+
+\section{Skills}
+
+\cvitem{Computer Programming}
+I am an experienced programmer in several languages including \textbf{C},
+\textbf{C\raisebox{.1em}{\tiny \bf ++}}, \textbf{Python}, \textbf{Matlab}, and
+\textbf{Haskell}.
+
+\cvitem{Cell Culture \& Imaging}
+As part of my doctoral research, I was responsible for imaging cells and basic
+cell culture.
+
+\cvitem{Language Skills}
+I am bilingual in English and Portuguese. I speak and write fluent German (I
+attended a German high-school and the Technical University of Vienna) and speak
+fluent French (I have lived for a in France).
+
+\vspace{4.1em}
+\section{Full List of Publications}
+\vspace{2em}
+
+\subsection{Peer-Reviewed Journal Articles}
+\begin{enumerate}
+\item \textbf{Luis Pedro Coelho}, Tao Peng, and Robert F. Murphy,
+\emph{Quantifying the distribution of probes between subcellular locations
+using unsupervised pattern unmixing} in Bioinformatics (2010) 26 (12): i7-i12.
+\item \textbf{Luis Pedro Coelho}, Amr Ahmed, Andrew Arnold, Joshua Kangas,
+Abdul-Saboor Sheikh, Eric P. Xing, William W. Cohen, and Robert F. Murphy,
+\emph{Structured Literature Image Finder: Extracting Information from Text and
+Images in Biomedical Literature} in Lecture Notes in Bioinformatics vol. 6004
+\item \textbf{Luis Pedro Coelho}, Estelle Glory-Afshar, Joshua Kangas, Shannon
+Quinn, Aabid Shariff, and Robert F. Murphy; \emph{Principles of Bioimage
+Informatics: Focus on machine learning of cell patterns} in Lecture Notes in
+Computer Science
+\item Amr Ahmed, Andrew Arnold, \textbf{Luis Pedro Coelho}, Joshua Kangas,
+Abdul-Saboor Sheikk, Eric P. Xing, William W. Cohen, \emph{Structured
+Literature Image Finder: Parsing Text and Figures in Biomedical Literature} in
+Web Semantics: Science, Services and Agents on the World Wide Web, 2010
+\item Aabid Shariff, Joshua Kangas, \textbf{Luis Pedro Coelho}, Shannon Quinn,
+and Robert F. Murphy; \emph{Automated Image Analysis for High Content Screening
+and Analysis}, Journal Biomolecular Screening (2010)
+\end{enumerate}
+
+\subsection{Peer-Reviewed Conference Papers}
+\begin{enumerate}
+\item \textbf{Luis Pedro Coelho} and Arlindo Oliveira; \emph{Dotted Suffix
+Trees: A Structure for Approximate Text Indexing} SPIRE (2006)
+\item Amina Chebira, \textbf{Luis Pedro Coelho}, Aliaksei Sandryhaila, Stephen
+Lin, William G. Jenkinson, Jeremiah MacSleyne, Christopher Hoffman, Philipp
+Cuadra, Charles Jackson, Markus P\"uschel, Jelena Kovacevick; \emph{An Adaptive
+Multiresolution Approach to Fingerprint Recognition}, International Conference
+on Image Processing, (2007)
+\item \textbf{Luis Pedro Coelho} and Robert Murphy; \emph{Identifying
+Subcellular Locations from Images of Unknown Resolution} Bioinformatics
+Research and Development, LNCS, Springer, Volume 13, Vienna, Austria (2008)
+\item \textbf{Luis Pedro Coelho} and Robert F. Murphy; \emph{Unsupervised
+Unmixing of Subcellular Location Patterns}, Proceedings of ICML-UAI-COLT 2009
+Workshop on Automated Interpretation and Modeling of Cell Images (2009).
+\item Amr Ahmed, Andrew Arnold, \textbf{Luis Pedro Coelho}, Joshua Kangas,
+Abdul-Saboor Sheikk, Eric P. Xing, William W. Cohen, and Robert F. Murphy;
+\emph{Structured Literature Image Finder}, Proceedings of BioLINK (ISMB Special
+Interest Group 2009).
+\item \textbf{Luis Pedro Coelho}, Aabid Shariff, and Robert F. Murphy;
+\emph{Nuclear segmentation in microscope cell images: A hand-segmented dataset
+and comparison of algorithms} ISBI 2009.
+\item Taraz Buck, Arvind Rao, \textbf{Luis Pedro Coelho}, Margaret Fuhrman,
+Jonathan W. Jarvik, Peter B. Berget, and Robert F. Murphy; \emph{Cell Cycle
+Dependence of Protein Subcellular Location Inferred from Static, Asynchronous
+Images} EMBC 2009.
+\item Rita Reis and \textbf{Luis Pedro Coelho}, \emph{Using Theatre to Fight
+HIV/AIDS in Mozambique}, National Conference of the Association for Theatre in
+Higher Education, Chicago 2011
+\end{enumerate}
+
+
+\subsection{Invited Talks}
+\begin{enumerate}
+\item \emph{Proteome-scale analysis and modeling of subcellular location},4th
+CeBiTec Symposium BioImaging, Bielefeld (Germany) 25--27 August 2009
+\item \emph{Unsupervised Mixture Pattern Unmixing}, University of Bielefeld
+International Graduate School of Bioinformatics and Genome Research, July 2008.
+\end{enumerate}
+
+
+\subsection{Other Talks}
+
+\begin{enumerate}
+\item \emph{Determining Resolvable Subcellular Location Categories as a
+Function of Image Resolution}, \textbf{Luis Pedro Coelho} and Robert F. Murphy,
+24th ISAC Congress, Budapest, May 2008.
+\end{enumerate}
+
+\end{document}
