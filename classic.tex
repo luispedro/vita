@@ -19,14 +19,14 @@
 \font\Date="Lucida Sans Demibold" at 9pt
 
 \renewcommand\section[1]{%
-    \par\vspace{2em}%
+    \par\vspace{2em}\penalty-100%
     {\subhead #1}%
-    \par\vspace{1em}%
+    \par\penalty100\vspace{1em}\penalty100%
 }
 \renewcommand\subsection[1]{%
-    \par\vspace{.1em}%
+    \par\vspace{.1em}\penalty-100%
     {\hspace{1em}\subsubhead #1}%
-    \par\vspace{.2em}%
+    \par\vspace{.2em}\penalty100%
 }
 \newcommand\cvitem[2][\relax]{%
     \par\vspace{.8em}
@@ -43,6 +43,7 @@
 
 \usepackage{enumitem}
 \renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"F6B9}}}
+\pagestyle{empty}
 \begin{document}
 
 \parindent=0cm
@@ -50,11 +51,11 @@
 {\LARGE Luis Pedro Coelho}
 \medskip
 
-Carnegie Mellon University\\
+{\small Carnegie Mellon University\\
 5000 Forbes Ave, GHC 7405\\
 Pittsburgh, PA (USA)\\
-\textit{phone} : (+1)-412-330-8306\\
-\textit{email} : lpc@cmu.edu
+\textit{phone}: (+1)-412-330-8306\\
+\textit{email}: lpc@cmu.edu}
 
 \vspace{2.3em}
 
@@ -144,6 +145,7 @@ Mozambique.
 Producer for the IST Theatre Group. Activities included fund-raising and
 management.
 
+\pagebreak
 \section{Other Experience}
 
 \cvitem{Open Source Software}
@@ -164,9 +166,8 @@ Wide experience in \textbf{C}, \textbf{C\raisebox{.1em}{\tiny \bf ++}},
 Bilingual in \textbf{English} and \textbf{Portuguese}, fluent \textbf{German}
 and \textbf{French}.
 
-\vspace{4.1em}
+\bigskip
 \section{Full List of Publications}
-\vspace{2em}
 
 \subsection{Peer-Reviewed Journal Articles}
 \begin{enumerate}
