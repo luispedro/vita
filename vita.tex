@@ -17,10 +17,11 @@
 \font\subhead="Qlassik Medium" at 15pt
 \font\subsubhead="Qlassik Medium" at 15pt
 \font\Quote="Linux Libertine O Bold Italic:mapping=tex-text" at 16pt
+\font\Contact="Linux Libertine O" at 11pt
 \font\Text="Linux Libertine O" at 11pt
-\font\Textit="Linux Libertine O/I:+onum" at 11pt 	% /I select Italic
-\font\Textblack="Linux Libertine O/BI" at 9pt 	% /BI select Bold Italic 
-\font\Textsc="Linux Libertine O:+smcp" at 11pt 	% +smcp selects Small Caps
+\font\Textit="Linux Libertine O/I:+onum" at 11pt       % /I select Italic
+\font\Textblack="Linux Libertine O/BI" at 9pt  % /BI select Bold Italic
+\font\Textsc="Linux Libertine O:+smcp" at 11pt         % +smcp selects Small Caps
 \font\wdate="Linux Libertine O:+smcp, letterspace=4,+onum" at 9pt % +onum old style numerals
 
 \renewcommand\section[1]{%
@@ -35,7 +36,7 @@
 }
 \newcommand\cvitem[2][\relax]{%
     \par\vspace{.8em}
-    \if\relax#1\else{\Textsc #1}\hspace{1em}\fi%
+    \if\relax#1\else\textsc{#1}\hspace{1em}\fi%
     {\Textblack #2}%
     \par\vspace{.4em}
 }
@@ -54,24 +55,32 @@
 \head \textcolor{darkg}{LUIS PEDRO COELHO}
 
 \begin{minipage}[t]{0.70\linewidth}%
-\raggedright\Quote\color{darkg} A computational biologist interested in the cell biology the malaria Plasmodium
+\raggedright\Quote\color{darkg} A computational cell biologist interested in studying the malaria Plasmodium
 \end{minipage}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.26\textwidth}%
 \vspace{-2.2em}
-
-\Text \textcolor{medg}{
+{\Contact%
+\textcolor{medg}{
 Carnegie Mellon University\\
 5000 Forbes Ave, GHC 7405\\
 Pittsburgh, PA (USA)}\\
 \textcolor{darkg}{phone} : (+1)-412-330-8306\\
 \textcolor{darkg}{email} : lpc@cmu.edu
+}
 \end{minipage}
 
 \vspace{2.3em}
 
 \section{Research Highlights}
+\Text
+
+\cvitem[2011]{Proteome-wide Study of Subcellular Location in Mouse Fibroblasts}
+I am developing new methods for learning from both a very large collection of
+images of fluorescently tagged proteins and other forms of data (sequence
+information, database information). This work builds on my past work and is, at
+the moment, still unpublished.
 
 \cvitem[2010]{Unsupervised Subcellular Pattern Unmixing}
 Many proteins are located in more than one organelle simultaneously, a
@@ -80,9 +89,12 @@ organelle being a pure pattern). Recovering the organelle structure from image
 data where mixed patterns are present is known as the unsupervised unmixing
 problem in subcellular location. I developed new models for
 solving this problem. My solution was chosen as one of the highlights of 2010
-in computational biology by the journal \emph{Nature}.
+in computational biology by the journal \emph{Nature Biotechnology}\footnote{
+\emph{Trends in computational biology—2010} by H. Craig Mak, Nature
+Biotechnology, Vol. 29, No. 1. (January 2011), pp. 45-45}.
+%  doi:10.1038/nbt.1747 Key: citeulike:8530345
 
-\cvitem[2008-2010]{Structure Literature Image Finder (SLIF)}
+\cvitem[2008-2009]{Structure Literature Image Finder (SLIF)}
 SLIF is a search engine that indexes biomedical papers with their images. In
 this project, I was responsible for the computer vision aspects of the
 processing pipeline. I also handled much of the integration effort of the
@@ -94,17 +106,16 @@ represented our team in both the final and the semi-final of this competition.
 \section{Education}
 
 \cvitem[Summer 2011]{PhD in computational biology, Carnegie Mellon University}
-Advised by Prof.\ Robert F. Murphy, I presented new automated techniques for
-the proteome-wide subcellular localisation of proteins in mouse cells based on
-fluorescent images and other data
+Dissertation topic: \emph{Modeling the Space of Subcellular Location Patterns
+Using Images and Other Sources of Information}, advised by Prof.\ Robert F.
+Murphy.
 
 \cvitem[2006]{MS in computer science, Instituto Superior T\'ecnico (Technical University Lisbon)}
-Advised by Prof.\ Arlindo Oliveira, I analysed the theoretical limitations of
-extracting information from noisy data.
+Dissertation topic: \emph{Bayesian Network Parameter Estimation Using Noisy
+Observations or Soft Evidence}, advised by Prof.\ Arlindo Oliveira.
 
 \cvitem[2004]{BS in computer science, Instituto Superior T\'ecnico (Technical University Lisbon)}
-One year spent in the Technical University of Vienna as an exchange student.
-Finished top my class.
+Finished top of my class.
 
 \section{Teaching Experience}
 
@@ -130,25 +141,15 @@ An approximate string index is a data structure that allows for fast string
 queries where the matches may be approximate. I developed one such index, the
 \emph{dotted suffix tree}.
 
-\section{Honours \&\ Awards}
+\section{Scholarships \&\ Awards}
 
-\cvitem[2007--2011]{PhD. Scholarship from Portuguese Science Foundation}
-Grant for PhD.\ studies in the United States.
-
-\cvitem[2009]{Research Excellence Award}
-From the Joint Carnegie Mellon--University of Pittsburgh Ph.D. Program in Computational Biology.
-
-\cvitem[2008]{Academic Excellence Award}
-From the Joint Carnegie Mellon--University of Pittsburgh Ph.D. Program in Computational Biology.
-
+\cvitem[2007-2011]{PhD. Scholarship from Portuguese Science Foundation}
+\cvitem[2009]{Joint CMU-U. of Pittsburgh PhD.\ in Computational Biology Research Excellence Award}
+\cvitem[2008]{Joint CMU-U. of Pittsburgh PhD.\ in Computational Biology Academic Excellence Award}
 \cvitem[2006]{Fulbright Fellow}
-Grant for PhD.\ studies in the United States.
-
-\cvitem[2005--2006]{Scholarship from Portuguese Science Foundation}
-Grant for introduction to research.
-
-\cvitem[2001]{Academic Excellence Award}
-From Instituto Superior T\'ecnico.
+\cvitem[2005]{Scholarship from Portuguese Science Foundation}
+\cvitem[2004]{Second Prize in \emph{Lisboa \`a Letra} short story competition}
+\cvitem[2001]{Instituto Superior T\'ecnico (IST) Academic Excellence Award}
 
 \section{Organisational Experience}
 
@@ -160,10 +161,10 @@ as well as participants from all around the US.
 
 \cvitem[2010]{Beira Project}
 With Rita Reis, I started the Beira Project. We spent two months as volunteers
-in Beira, Mozambique. We had previously held several successful fund-raising
-activies for organisations in Mozambique, raising almost 4000 USD.
+in Beira, Mozambique. We had also held organised successful fund-raising activities
+for organisations in Mozambique.
 
-\cvitem[2002--2004]{Producer for IST Theatre Group}
+\cvitem[2002-2004]{Producer for IST Theatre Group}
 I acted as the producer for the IST Theatre Group, which is one of the top
 university theatre groups in Portugal. We participated in several festival,
 including international festivals. As producer, my activities included
@@ -173,10 +174,10 @@ fund-raising and management.
 
 \cvitem{Open Source Software}
 I have released several important open source packages related to my research
-work, namely in the areas of machine learning and computer vision. Previously,
-I was a \textsc{kde} developer. The \textsc{kde} project is one of the largest
-open-source projects in the world with several hundred developers and over one
-million lines of code.
+work, namely in the areas of \textbf{machine learning} and \textbf{computer
+vision}. Previously, I was a \textsc{kde} developer. The \textsc{kde} project
+is one of the largest open-source projects in the world with several hundred
+developers and over one million lines of code.
 
 \section{Skills}
 
@@ -186,13 +187,14 @@ I am an experienced programmer in several languages including \textbf{C},
 \textbf{Haskell}.
 
 \cvitem{Cell Culture \& Imaging}
-As part of my doctoral research, I was responsible for imaging cells and basic
-cell culture.
+As part of my doctoral research, I was responsible for \textbf{fluorescent
+imaging} (including handling tissue culture cells).
 
 \cvitem{Language Skills}
-I am bilingual in English and Portuguese. I speak and write fluent German (I
-attended a German high-school and the Technical University of Vienna) and speak
-fluent French (I have lived for a in France).
+I am bilingual in \textbf{English} and \textbf{Portuguese}. I speak and write
+fluent \textbf{German} (I attended a German high-school and the Technical
+University of Vienna) and speak fluent \textbf{French} (I have lived for a in
+France).
 
 \vspace{4.1em}
 \section{Full List of Publications}
@@ -255,7 +257,7 @@ Higher Education, Chicago 2011
 \subsection{Invited Talks}
 \begin{enumerate}
 \item \emph{Proteome-scale analysis and modeling of subcellular location},4th
-CeBiTec Symposium BioImaging, Bielefeld (Germany) 25--27 August 2009
+CeBiTec Symposium BioImaging, Bielefeld (Germany) 25-27 August 2009
 \item \emph{Unsupervised Mixture Pattern Unmixing}, University of Bielefeld
 International Graduate School of Bioinformatics and Genome Research, July 2008.
 \end{enumerate}
