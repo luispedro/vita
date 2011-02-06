@@ -14,15 +14,14 @@
 %FONTS
 \usepackage{fontspec}
 \font\head="Qlassik Medium:letterspace=4" at 34pt % http://www.dafont.com/qlassik.font
-\font\subhead="Qlassik Medium" at 15pt
-\font\subsubhead="Qlassik Medium" at 15pt
+\font\subhead="Avdira Italic" at 13pt
+\font\subsubhead="Avdira Italic" at 11pt
 \font\Quote="Linux Libertine O Bold Italic:mapping=tex-text" at 16pt
 \font\Contact="Linux Libertine O" at 11pt
 \font\Text="Linux Libertine O" at 11pt
-\font\Textit="Linux Libertine O/I:+onum" at 11pt       % /I select Italic
-\font\Textblack="Linux Libertine O/BI" at 9pt  % /BI select Bold Italic
-\font\Textsc="Linux Libertine O:+smcp" at 11pt         % +smcp selects Small Caps
-\font\wdate="Linux Libertine O:+smcp, letterspace=4,+onum" at 9pt % +onum old style numerals
+\font\Textit="Linux Libertine O/I:+onum" at 11pt
+\font\CvItem="Lucida Sans Regular" at 10pt
+\font\Date="Lucida Sans Demibold" at 9pt
 
 \renewcommand\section[1]{%
     \par\vspace{2em}%
@@ -36,8 +35,8 @@
 }
 \newcommand\cvitem[2][\relax]{%
     \par\vspace{.8em}
-    \if\relax#1\else\textsc{#1}\hspace{1em}\fi%
-    {\Textblack #2}%
+    \if\relax#1\else{\Date \textcolor{medg}{#1}}\hspace{1em}\fi%
+    {\CvItem #2}%
     \par\vspace{.4em}
 }
 
@@ -161,8 +160,10 @@ as well as participants from all around the US.
 
 \cvitem[2010]{Beira Project}
 With Rita Reis, I started the Beira Project. We spent two months as volunteers
-in Beira, Mozambique. We had also held organised successful fund-raising activities
-for organisations in Mozambique.
+in Beira (Mozambique) working with organisations that provide public health
+information and services, mostly relating to \textsc{hiv}. We had also held
+organised successful fund-raising activities for our partner organisations in
+Mozambique.
 
 \cvitem[2002-2004]{Producer for IST Theatre Group}
 I acted as the producer for the IST Theatre Group, which is one of the top
@@ -188,7 +189,7 @@ I am an experienced programmer in several languages including \textbf{C},
 
 \cvitem{Cell Culture \& Imaging}
 As part of my doctoral research, I was responsible for \textbf{fluorescent
-imaging} (including handling tissue culture cells).
+imaging} of cultured cells.
 
 \cvitem{Language Skills}
 I am bilingual in \textbf{English} and \textbf{Portuguese}. I speak and write
