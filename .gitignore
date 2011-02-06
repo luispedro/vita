@@ -1,4 +1,5 @@
-vita.aux
-vita.log
-vita.out
+*.aux
+*.log
+*.out
 vita.pdf
+classic.pdf
