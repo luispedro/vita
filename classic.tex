@@ -14,13 +14,8 @@
 %FONTS
 \usepackage{fontspec}
 \font\head="Qlassik Medium:letterspace=4" at 34pt % http://www.dafont.com/qlassik.font
-\font\subhead="Avdira Italic" at 13pt
-\font\subsubhead="Avdira Italic" at 11pt
-\font\Quote="Linux Libertine O Bold Italic:mapping=tex-text" at 16pt
-\font\Contact="Linux Libertine O" at 11pt
-\font\Text="Linux Libertine O:mapping=tex-text" at 11pt
-\font\Textit="Linux Libertine O/I:+onum" at 11pt
-\font\CvItem="Lucida Sans Regular" at 10pt
+\font\subhead="Lucida Sans" at 13pt
+\font\subsubhead="Lucida Sans" at 11pt
 \font\Date="Lucida Sans Demibold" at 9pt
 
 \renewcommand\section[1]{%
@@ -35,8 +30,8 @@
 }
 \newcommand\cvitem[2][\relax]{%
     \par\vspace{.8em}
-    \if\relax#1\else{\Date \textcolor{medg}{#1}}\hspace{1em}\fi%
-    {\CvItem #2}%
+    \if\relax#1\else{\textit{#1}}\hspace{1em}\fi%
+    {\textbf{#2}}%
     \par\vspace{.4em}
 }
 \newcommand\showdoi[1]{%
@@ -52,57 +47,16 @@
 
 \parindent=0cm
 
-\begin{minipage}[t]{0.60\linewidth}%
-\head \textcolor{darkg}{LUIS PEDRO COELHO}
+{\LARGE Luis Pedro Coelho}
+\medskip
 
-\begin{minipage}[t]{0.70\linewidth}%
-\raggedright\Quote\color{darkg} A computational cell biologist interested in studying the malaria Plasmodium
-\end{minipage}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.26\textwidth}%
-\vspace{-2.2em}
-{\Contact%
-\textcolor{medg}{
 Carnegie Mellon University\\
 5000 Forbes Ave, GHC 7405\\
-Pittsburgh, PA (USA)}\\
-\textcolor{darkg}{phone} : (+1)-412-330-8306\\
-\textcolor{darkg}{email} : lpc@cmu.edu
-}
-\end{minipage}
+Pittsburgh, PA (USA)\\
+\textit{phone} : (+1)-412-330-8306\\
+\textit{email} : lpc@cmu.edu
 
 \vspace{2.3em}
-
-\section{Research Highlights}
-\Text
-
-\cvitem[2011]{Proteome-wide Study of Subcellular Location in Mouse Fibroblasts}
-I am developing new methods for learning from both a very large collection of
-images of fluorescently tagged proteins and other forms of data (sequence
-information, database information). This work builds on my past work and is, at
-the moment, still unpublished.
-
-\cvitem[2010]{Unsupervised Subcellular Pattern Unmixing}
-Many proteins are located in more than one organelle simultaneously, a
-phenomenon known as a mixed pattern (the pattern corresponding to a single
-organelle being a pure pattern). Recovering the organelle structure from image
-data where mixed patterns are present is known as the unsupervised unmixing
-problem in subcellular location. I developed new models for
-solving this problem. My solution was chosen as one of the highlights of 2010
-in computational biology by the journal \emph{Nature Biotechnology}\footnote{
-\emph{Trends in computational biology—2010} by H. Craig Mak, Nature
-Biotechnology, Vol. 29, No. 1. (January 2011), pp. 45-45
-\showdoi{10.1038/nbt.1747}}.
-
-\cvitem[2008-2009]{Structure Literature Image Finder (SLIF)}
-SLIF is a search engine that indexes biomedical papers with their images. In
-this project, I was responsible for the computer vision aspects of the
-processing pipeline. I also handled much of the integration effort of the
-several components and coordinated the preparation of the multi-author
-publications that resulted from the effort. This project was a finalist in the
-Elsevier Grand Challenge (4 teams out of 70 were chosen for the final). I
-represented our team in both the final and the semi-final of this competition.
 
 \section{Education}
 
@@ -118,29 +72,50 @@ Observations or Soft Evidence}, advised by Prof.\ Arlindo Oliveira.
 \cvitem[2004]{BS in computer science, Instituto Superior T\'ecnico (Technical University Lisbon)}
 Finished top of my class.
 
+\section{Research Experience}
+
+\cvitem[2011]{Proteome-wide Study of Subcellular Location in Mouse Fibroblasts}
+Developing new methods for learning from both a very large collection of images
+of fluorescently tagged proteins and other forms of data (sequence information,
+database information). This work builds on my past work and is, at the moment,
+still unpublished.
+
+\cvitem[2010]{Unsupervised Subcellular Pattern Unmixing}
+Many proteins are located in more than one organelle simultaneously, a
+phenomenon known as a mixed pattern (the pattern corresponding to a single
+organelle being a pure pattern). Recovering the organelle structure from image
+data where mixed patterns are present is known as the unsupervised unmixing
+problem in subcellular location. I developed new models for
+solving this problem. My solution was chosen as one of the highlights of 2010
+in computational biology by the journal \emph{Nature Biotechnology}.\footnote{
+\emph{Trends in computational biology—2010} by H. Craig Mak, Nature
+Biotechnology, Vol. 29, No. 1. (January 2011), pp. 45-45
+\showdoi{10.1038/nbt.1747}}
+
+\cvitem[2008-2009]{Structure Literature Image Finder (SLIF)}
+SLIF is a search engine that indexes biomedical papers with their images. This
+project was a finalist in the Elsevier Grand Challenge (4 teams out of 70 were
+chosen for the final). I represented our team in both the final and the
+semi-final of this competition.
+
+\cvitem[2005-2006]{Approximate String Indexing}
+Working with Arlindo Oliveira, in INESC/ID (Lisbon).
+
 \section{Teaching Experience}
 
 \cvitem[2011]{Practical Tutorial in Lisbon Machine Learning Summer School}
 
 \cvitem[2009]{Programming for Scientists}
-I designed and taught a semester-long course on computer programming for
-scientists at Carnegie Mellon University. This course was not based on any
-existing course at CMU, but resulted from a need I identified in biomedical or
-physical scientists who, as part of their job, have a need to program.
+Designed and taught a semester-long course on computer programming for
+scientists at Carnegie Mellon University.
 
 \cvitem[2008]{Teaching Assistant for Laboratory Methods for Computational Biologists (CMU)}
 \cvitem[2005]{Introduction to Computers Course in Cac\'em}
-I co-developed and co-taught an introductory course in computer usage in
-Cac\'em, an underprivileged neighbourhood near Lisbon. This was pro-bono work.
+Co-developed and co-taught an introductory course in computer usage in Cac\'em,
+an underprivileged neighbourhood near Lisbon (pro-bono work).
 
 \cvitem[2005]{Teaching Assistant for Decision Support Systems (IST)}
 
-\section{Other Research Projects}
-
-\cvitem[2005-2006]{Approximate String Indexing}
-An approximate string index is a data structure that allows for fast string
-queries where the matches may be approximate. I developed one such index, the
-\emph{dotted suffix tree}.
 
 \section{Scholarships \&\ Awards}
 
@@ -155,49 +130,39 @@ queries where the matches may be approximate. I developed one such index, the
 \section{Organisational Experience}
 
 \cvitem[2010]{Local Committee for Portuguese-American Postgraduate Society National Forum}
-I headed the local organising committee for this the 2010 edition of this
+Headed the local organising committee for this the 2010 edition of this
 annual event. It took place in Pittsburgh and included, as speakers,
 cabinet-level Portuguese government officials, renowned researchers, artists,
 as well as participants from all around the US.
 
 \cvitem[2010]{Beira Project}
-With Rita Reis, I started the Beira Project. We spent two months as volunteers
-in Beira (Mozambique) working with organisations that provide public health
-information and services, mostly relating to \textsc{hiv}. We had also held
-organised successful fund-raising activities for our partner organisations in
+Started the Beira Project (with Rita Reis). The Beira Project has held
+organised successful fund-raising activities for partner organisations in
 Mozambique.
 
 \cvitem[2002-2004]{Producer for IST Theatre Group}
-I acted as the producer for the IST Theatre Group, which is one of the top
-university theatre groups in Portugal. We participated in several festival,
-including international festivals. As producer, my activities included
-fund-raising and management.
+Producer for the IST Theatre Group. Activities included fund-raising and
+management.
 
 \section{Other Experience}
 
 \cvitem{Open Source Software}
-I have released several important open source packages related to my research
-work, namely in the areas of \textbf{machine learning} and \textbf{computer
-vision}. Previously, I was a \textsc{kde} developer. The \textsc{kde} project
-is one of the largest open-source projects in the world with several hundred
-developers and over one million lines of code.
+Several contribution in the areas of \textbf{machine learning} and
+\textbf{computer vision}. Previously a \textsc{kde} developer. The \textsc{kde}
+project is one of the largest open-source projects in the world with several
+hundred developers and over one million lines of code.
 
 \section{Skills}
 
 \cvitem{Computer Programming}
-I am an experienced programmer in several languages including \textbf{C},
-\textbf{C\raisebox{.1em}{\tiny \bf ++}}, \textbf{Python}, \textbf{Matlab}, and
-\textbf{Haskell}.
+Wide experience in \textbf{C}, \textbf{C\raisebox{.1em}{\tiny \bf ++}},
+\textbf{Python}, \textbf{Matlab}, and \textbf{Haskell}.
 
 \cvitem{Cell Culture \& Imaging}
-As part of my doctoral research, I was responsible for \textbf{fluorescent
-imaging} of cultured cells.
 
 \cvitem{Language Skills}
-I am bilingual in \textbf{English} and \textbf{Portuguese}. I speak and write
-fluent \textbf{German} (I attended a German high-school and the Technical
-University of Vienna) and speak fluent \textbf{French} (I have lived for a in
-France).
+Bilingual in \textbf{English} and \textbf{Portuguese}, fluent \textbf{German}
+and \textbf{French}.
 
 \vspace{4.1em}
 \section{Full List of Publications}
