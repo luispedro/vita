@@ -23,9 +23,9 @@
 \font\Date="Lucida Sans Demibold Roman:mapping=tex-text" at 9pt
 
 \renewcommand\section[1]{%
-    \par\vspace{1.8em}\penalty-100%
+    \par\vspace{1.4em}\penalty-100%
     {\subhead #1}%
-    \par\penalty100\vspace{1em}\penalty100%
+    \par\penalty100\vspace{0.1em}\penalty100%
 }
 \renewcommand\subsection[1]{%
     \par\vspace{.1em}%
@@ -33,10 +33,10 @@
     \par\vspace{.2em}%
 }
 \newcommand\cvitem[2][\relax]{%
-    \par\vspace{.8em}
+    \par\vspace{.4em}
     \if\relax#1\else{\Date \textcolor{medg}{#1}}\hspace{1em}\fi%
     {\CvItem #2}%
-    \par\vspace{.4em}
+    \par%
 }
 \newcommand\showdoi[1]{%
     \href{http://dx.doi.org/#1}{[DOI]}%
@@ -95,6 +95,13 @@ Observations or Soft Evidence}, advised by Prof.\ Arlindo Oliveira.
 \cvitem[2004]{BS in computer science, Instituto Superior Técnico (Technical University Lisbon)}
 Finished top of my class.
 
+\section{Professional Experience}
+
+\cvitem[2013--Present]{Postdoctoral researcher at European Molecular Biology Laboratory (EMBL)}
+Supervisor: Dr.\ Peer Bork
+
+\cvitem[2012]{Postdoctoral researcher at Instituto de Medicina Molecular (Lisbon)}
+Supervisor: Dr.\ Musa Mhlanga
 
 \section{Scholarships \&\ Awards}
 
@@ -200,24 +207,23 @@ Database, IEEE~Transactions in Computational Biology and~Bionformatics, and
 IEEE~Transactions on Medical Imaging. I have also reviewed grant proposals for
 the Czech Science Foundation.
 
-\section{Skills}
-
-\cvitem{Computer Programming}
-I am an experienced programmer in several languages including \textbf{C},
-\textbf{C\raisebox{.2em}{\tiny \bf ++}}, \textbf{Python}, \textbf{Matlab}, and
-\textbf{Haskell}.
-
-\cvitem{Cell Culture \& Fluorescent Imaging}
-As part of my doctoral research, I was responsible for \textbf{fluorescent
-imaging} of \textbf{cultured mammalian cells}. During my postdoctoral research,
-I extended this expertise to culturing blood-stage Plasmodium falciparum.
-
+%\section{Skills}
+%
+%\cvitem{Computer Programming}
+%I am an experienced programmer in several languages including \textbf{C},
+%\textbf{C\raisebox{.2em}{\tiny \bf ++}}, \textbf{Python}, \textbf{Matlab}, and
+%\textbf{Haskell}.
+%
+%\cvitem{Cell Culture \& Fluorescent Imaging}
+%As part of my doctoral research, I was responsible for \textbf{fluorescent
+%imaging} of \textbf{cultured mammalian cells}. During my postdoctoral research,
+%I extended this expertise to culturing blood-stage Plasmodium falciparum.
+%
 \cvitem{Language Skills}
 I am bilingual in \textbf{English} and \textbf{Portuguese}. I speak and write
 fluent \textbf{German} (I attended a German high-school, obtaining an Abitur;
 and later spent a year as an exchange student at Technical University of
-Vienna) and speak fluent \textbf{French} (I have lived in France). I have a
-basic understanding of \textbf{Luxembourgish}.
+Vienna) and speak fluent \textbf{French}. I know basic \textbf{Luxembourgish}.
 
 \pagebreak
 \section{Full List of Publications}
