@@ -13,14 +13,20 @@
 \usepackage{fontspec}
 \font\head="Qlassik Medium:letterspace=4" at 34pt % http://www.dafont.com/qlassik.font
 \font\headtwo="Qlassik Medium:letterspace=4" at 24pt % http://www.dafont.com/qlassik.font
-\font\subhead="Avdira Italic" at 13pt
-\font\subsubhead="Avdira Italic" at 11pt
+\font\subhead="Lucida Sans Demibold Roman:mapping=tex-text" at 13pt
+\font\subsubhead="Gentium Book Basic:mapping=tex-text" at 13pt
 \font\Quote="Linux Libertine O Bold Italic:mapping=tex-text" at 16pt
-\font\Contact="Linux Libertine O" at 11pt
-\font\Text="Linux Libertine O:mapping=tex-text" at 11pt
-\font\Textit="Linux Libertine O/I:+onum" at 11pt
-\font\CvItem="Lucida Sans Regular:mapping=tex-text" at 10pt
+\font\Contact="Linux Libertine O" at 9pt
+\newfontfamily\Text{Linux Libertine O}[BoldFont={* Bold}]
+
+\font\Textit="Linux Libertine O/I:+onum" at 10pt
+\font\CvItem="Lucida Sans Regular:mapping=tex-text" at 9pt
 \font\Date="Lucida Sans Demibold Roman:mapping=tex-text" at 9pt
+\setmainfont[
+    BoldFont={Linux Libertine O Bold},
+    ItalicFont={Linux Libertine O Italic},
+    BoldItalicFont={Linux Libertine O Bold Italic},
+]{Linux Libertine O:mapping=tex-text}
 
 \renewcommand\section[1]{%
     \par\vspace{1.4em}\penalty-100%
@@ -57,20 +63,18 @@
 
 \parindent=0cm
 
-\begin{minipage}[t]{0.60\linewidth}%
+\begin{minipage}[t]{0.56\linewidth}%
 \head LUIS PEDRO COELHO\\
 \headtwo \textcolor{darkg}{Curriculum Vitæ}
 
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.34\textwidth}%
+\begin{minipage}[t]{0.40\textwidth}%
 \vspace{-2.2em}
 {\Contact%
 \textcolor{medg}{%
-European Molecular Biology\\
-Laboratory (EMBL)\\
-Meyerhofstraße, Heidelberg\\
-Germany}\\
+European Molecular Biology Laboratory (EMBL)\\
+Meyerhofstraße, Heidelberg (Germany)}\\
 \textcolor{darkg}{phone} :  +49 (0) 6221 387 (8296)\\
 \textcolor{darkg}{email} : luis@luispedro.org\\
 \textcolor{darkg}{ORCID} : \href{http://orcid.org/0000-0002-9280-7885}{0000-0002-9280-7885}\\
@@ -80,7 +84,7 @@ Germany}\\
 }
 \end{minipage}
 
-\vspace{2.3em}
+\vspace{1.3em}
 
 \section{Education}
 \Text
@@ -118,16 +122,39 @@ students from the world's leading graduate schools
 \cvitem[2009]{Joint CMU-U. of Pittsburgh PhD.\ in Computational Biology Research Excellence Award}
 \cvitem[2008]{Joint CMU-U. of Pittsburgh PhD.\ in Computational Biology Academic Excellence Award}
 \cvitem[2006]{Fulbright Fellow}
-Awarded for Portuguese citizens to study in the United States. Circa~12 are
-awarded annually from hundreds of applicants.
-
 \cvitem[2005]{Scholarship from Portuguese Science Foundation}
 \cvitem[2004]{Second Prize in \emph{Lisboa à Letra} short story competition}
 \cvitem[2001]{Instituto Superior Técnico (IST) Academic Excellence Award}
 
+\section{Project Participation}
+
+\cvitem[2013--present]{Cancerbiome (FP7-IDEAS-ERC)}
+\cvitem[2013--present]{TARA Oceans Consortium}
+\cvitem[2008--2010]{Subcellular Location Image Finder (NIH funded)}
+
 \break
-\section{Service \& Mentoring}
+\section{Service \& Outreach}
+\cvitem[2014--present]{Online outreach activities}
+I maintain a blog about science at
+\href{http://metarabbit.wordpress.com}{http://metarabbit.wordpress.com} and
+tweet about science as \href{https://twitter.com/luispedrocoelho}{@luispedrocoelho}
+\cvitem[2014--2015]{Organized Software Carpentry Workshop at EMBL}
 \cvitem[2012--2013]{Member of the Organization of the Lisbon Machine Learning School}
+\cvitem[2010]{Local Committee for Portuguese-American Postgraduate Society National Forum}
+I headed the local organising committee for the 2010 edition of this annual
+event. It took place in Pittsburgh and included, as speakers, cabinet-level
+Portuguese government officials, renowned researchers, artists, as well as
+participants from all around the US.
+\cvitem[2006--present]{Peer Review}
+I have reviewed papers for BMC~Bioinformatics, PLoS Computational Biology,
+Database, IEEE~Transactions in Computational Biology and~Bionformatics, and
+IEEE~Transactions on Medical Imaging. I have also reviewed grant proposals for
+the Czech Science Foundation and the French National Research Agency (ANR).
+\cvitem[2002--2004]{Producer for IST Theatre Group}
+
+\section{Teaching \& Mentoring}
+\cvitem[2012--2015]{Certified Software Carpentry Instructor}
+I have given lectures on Software Carpentry in Germany, Denmark, Cyprus, Jordan, and Spain.
 \cvitem[2012--2013]{Supervision of Students at Instituto Superior Técnico (IST, Lisbon)}
 Co-advised one Master thesis in Computer Science (Paulo Monteiro) and one in
 Biomedical Engineering (Joana Cruz). During 2012, I was co-mentor to
@@ -142,24 +169,6 @@ in the Joint Carnegie Mellon University--University of Pittsburgh PhD.\ Program
 in Computational Biology}), \textbf{undergraduate students} performing lab work
 for credit (Jimmy Xu), and \textbf{high school students} volunteering over the
 summer (Peter Webb and Robert Webb).
-
-\cvitem[2010]{Local Committee for Portuguese-American Postgraduate Society National Forum}
-I headed the local organising committee for the 2010 edition of this annual
-event. It took place in Pittsburgh and included, as speakers, cabinet-level
-Portuguese government officials, renowned researchers, artists, as well as
-participants from all around the US.
-
-\cvitem[2002--2004]{Producer for IST Theatre Group}
-
-\cvitem{Peer Review}
-I have reviewed papers for BMC~Bioinformatics, PLoS Computational Biology,
-Database, IEEE~Transactions in Computational Biology and~Bionformatics, and
-IEEE~Transactions on Medical Imaging. I have also reviewed grant proposals for
-the Czech Science Foundation.
-
-\section{Teaching Experience}
-
-\cvitem[2013--2014]{Certified Software Carpentry Instructor}
 \cvitem[2012]{Programming for Scientists (short course)}
 \cvitem[2012]{Practical Tutorial in Next Generation Sequencing in ``Omics for Parasite Biology'' Course}
 \cvitem[2011--2015]{Tutorial in Lisbon Machine Learning Summer School}
@@ -170,11 +179,7 @@ scientists at Carnegie Mellon University.
 \cvitem[2005]{Introduction to Computers Course in Cacém}
 I co-developed and co-taught an introductory course in computer usage in
 Cacém, an underprivileged neighborhood near Lisbon. This was pro-bono work.
-
 \cvitem[2005]{Teaching Assistant for Decision Support Systems (IST)}
-
-
-
 
 \section{Language Skills}
 I am bilingual in \textbf{English} and \textbf{Portuguese}. I speak and write
