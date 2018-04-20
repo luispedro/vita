@@ -9,7 +9,6 @@ let
         polyglossia
         euenc
         xunicode
-        xetex-def
         enumitem
         wrapfig;
   };
