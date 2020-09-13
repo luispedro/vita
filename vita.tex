@@ -38,7 +38,12 @@
 }
 \renewcommand\subsection[1]{%
     \par\vspace{.1em}%
-    {\hspace{1em}\subsubhead #1}%
+    {\hspace{0em}\subsubhead #1}%
+    \par\vspace{.4em}%
+}
+\renewcommand\subsubsection[1]{%
+    \par\vspace{.1em}%
+    {\hspace{1em}\subsubsubhead #1}%
     \par\vspace{.2em}%
 }
 \newcommand\cvitem[2][\relax]{%
@@ -215,10 +220,150 @@ Google scholar profile: \href%
 \medskip
 \medskip
 
-\subsection{Preprints (submitted for peer-review)}
-\Text
+\section{First or corresponding author}
+{\small (includes co-first/co-corresponding author publications.)}
+\vspace{2em}
+
+\subsubsection{Peer-reviewed journal publications}
 
 \begin{enumerate}[resume]
+
+\item \textbf{Luis Pedro Coelho}, Renato Alves, Paulo Monteiro, Jaime
+Huerta-Cepas, Ana Teresa Freitas, Peer Bork \emph{NG-meta-profiler: fast
+processing of metagenomes using NGLess, a domain-specific language} in
+\pubname{Microbiome} vol.\ 7, 84, 2019 \showdoi{10.1186/s40168-019-0684-8}
+\contribution{I conceived of the concept, co-wrote the software and the manuscript}
+
+\item \textbf{Luis Pedro Coelho}, Jens Kultima, Paul Costea, Coralie Fournier,
+Yuanlong Pan, Gail Czarnecki-Maulden, Matthew Hayward, Kristoffer Forslund,
+Patrick Descombes, Janet Jackson, Qinghong Li, and Peer Bork \emph{Similarity
+of the dog and human gut microbiomes in gene content and response to diet} in
+\pubname{Microbiome}, vol 6:72, 2018 \showdoi{10.1186/s40168-018-0450-3}
+\contribution{I designed and implemented the analysis strategy, wrote the first
+version of the manuscript, and lead the subsequent incorporation of co-author
+suggestions.}
+
+\item \textbf{Luis Pedro Coelho}, \emph{Jug: Software for parallel reproducible
+computation in Python} in \pubname{Journal of Open Research
+Software}, 2017 \showdoi{10.5334/jors.161}
+\contribution{I designed and implemented the software presented and wrote the
+manuscript.}
+
+\item Sebastien Colin\costar, \textbf{Luis Pedro Coelho}\costar, Shinichi
+Sunagawa, Chris Bowler, Eric Karsenti, Peer Bork, Rainer Pepperkok, Colomban de
+Vargas, \emph{Quantitative 3D-Imaging of Environmental Microbial Eukaryotes
+using Automated Fluorescence Microscopy} in \pubname{eLife}, vol.\ 6:e26066,
+2017 \showdoi{10.7554/eLife.26066.001}.
+\contribution{I designed and implemented the computational analysis necessary
+for the method presented in the paper and participated in the writing of the
+manuscript.}
+
+\item Shinichi Sunagawa\costar, \textbf{Luis Pedro Coelho}\costar, Samuel
+Chaffron\costar, Jens Roat Kultima, Karine Labadie, Guillem Salazar, Bardya
+Djahanschiri, Georg Zeller, Daniel R. Mende, Adriana Alberti, Francisco M.
+Cornejo-Castillo, Paul I. Costea, Corinne Cruaud, Francesco d'Ovidio, Stefan
+Engelen, Isabel Ferrera, Josep M. Gasol, Lionel Guidi, Falk Hildebrand, Florian
+Kokoszka, Cyrille Lepoivre, Gipsi Lima-Mendez, Julie Poulain, Bonnie T. Poulos,
+Marta Royo-Llonch, Hugo Sarmento, Sara Vieira-Silva, Céline Dimier, Marc
+Picheral, Sarah Searson, Stefanie Kandels-Lewis, Tara Oceans coordinators,
+Chris Bowler, Colomban de Vargas, Gabriel Gorsky, Nigel Grimsley, Pascal
+Hingamp, Daniele Iudicone, Olivier Jaillon, Fabrice Not, Hiroyuki Ogata,
+Stephane Pesant, Sabrina Speich, Lars Stemmann, Matthew B. Sullivan, Jean
+Weissenbach, Patrick Wincker, Eric Karsenti, Jeroen Raes, Silvia G. Acinas,
+Peer Bork, \emph{Structure and Function of the Global Ocean Microbiome} in
+\pubname{Science} 348 (6237), 1261359, 2015 \showdoi{10.1126/science.1261359}
+\contribution{As co-first author, I performed analysis of the data, including
+linking the metagenomics data to the environmental parameters, as well as the
+comparison to the human gut (this required extending existing software tools
+which were unable to scale to this dataset); and helped draft the manuscript.}
+
+\item \textbf{Luis Pedro Coelho}, Catarina Pato, Ana Friães, Ariane Neumann,
+Maren von Köckritz-Blickwede, Mário Ramirez, João André Carriço,
+\emph{Automatic determination of NET (neutrophil extracellular traps) coverage
+in fluorescent microscopy images} in \pubname{Bioinformatics} 31 (14):
+2364--2370, 2015 \showdoi{10.1093/bioinformatics/btv156}
+\contribution{I conceived and implemented the algorithm, and wrote the
+manuscript.}
+
+\item \textbf{Luis Pedro Coelho}, Joshua D. Kangas, Armaghan Naik, Elvira
+Osuna-Highley, Estelle Glory-Afshar, Margaret Fuhrman, Ramanuja Simha, Peter B.
+Berget, Jonathan W. Jarvik, and Robert F. Murphy, \emph{Determining the
+subcellular location of new proteins from microscope images using local
+features} in \pubname{Bioinformatics}, 2013 \showdoi{10.1093/bioinformatics/btt392}
+\contribution{I designed and implemented the proposed algorithm, collected
+microscopy data (in collaboration with other authors), and wrote the
+manuscript.}
+
+\item \textbf{Luis Pedro Coelho} Mahotas: Open source software for scriptable
+computer vision, \pubname{Journal of Open Research Software}, vol.\ 1, 2013
+\showdoi{10.5334/jors.ac}
+\contribution{I implemented the underlying computer vision software and the manuscript.}
+
+\item \textbf{Luis Pedro Coelho}\costar, Tao Peng\costar, and Robert F.
+Murphy, \emph{Quantifying the distribution of probes between subcellular
+locations using unsupervised pattern unmixing} in \pubname{Bioinformatics},
+vol.\ 26 (12), pp.\ i7--i12, 2010 \showdoi{10.1093/bioinformatics/btq220}
+\contribution{I conceived of and implemented one of the methods presented and
+wrote the manuscript.}
+
+\item \textbf{Luis Pedro Coelho}, Amr Ahmed, Andrew Arnold, Joshua Kangas,
+Abdul-Saboor Sheikh, Eric P. Xing, William W. Cohen, and Robert F. Murphy,
+\emph{Structured Literature Image Finder: Extracting Information from Text and
+Images in Biomedical Literature} in \pubname{Lecture Notes in Bioinformatics},
+vol.\ 6004, pp.\ 23--32, 2010 \showdoi{10.1007/978-3-642-13131-8_4}
+\contribution{With the paper below, this forms a package on the SLIF project,
+where I enhanced the image analysis pipeline (for the analysis of figures in
+published scientific literature). I wrote the first draft of this manuscript
+and helped draft the one below.}
+
+\end{enumerate}
+
+
+\subsubsection{Peer-reviewed Conference Proceedings}
+
+\begin{enumerate}[resume]
+\item \textbf{Luis Pedro Coelho}, Aabid Shariff, and Robert F. Murphy;
+\emph{Nuclear segmentation in microscope cell images: A hand-segmented dataset
+and comparison of algorithms} in \pubname{Proceedings of IEEE International
+Symposium in Biomedical Imaging}, 2009 \showdoi{10.1109/ISBI.2009.5193098}
+\contribution{I acquired (part of) the microscopy data, built the
+hand-segmented dataset, implemented the methods and wrote the first draft of
+the manuscript.}
+
+
+\item \textbf{Luis Pedro Coelho} and Robert Murphy; \emph{Identifying
+Subcellular Locations from Images of Unknown Resolution} in
+\pubname{Bioinformatics Research and Development}, Communications in Computer
+and Information Science, vol.\ 13, pp.\ 235--242, 2008
+\showdoi{10.1007/978-3-540-70600-7_18}
+\contribution{I implemented the algorithm, ran the tests, and wrote the first
+draft of the paper.}
+
+\item \textbf{Luis Pedro Coelho} and Arlindo Oliveira; \emph{Dotted Suffix
+Trees: A Structure for Approximate Text Indexing} in \pubname{String Processing
+and Information Retrieval}, Lecture Notes in Computer Science, vol.\ 4209, pp.\
+329--336, 2006 \showdoi{10.1007/11880561_27}
+\contribution{I developed and implemented the algorithm and wrote the first
+draft of the manuscript.}
+
+\end{enumerate}
+
+\subsubsection{Review Articles}
+\begin{enumerate}[resume]
+\item \textbf{Luis Pedro Coelho}, Estelle Glory-Afshar, Joshua Kangas, Shannon
+Quinn, Aabid Shariff, and Robert F. Murphy; \emph{Principles of Bioimage
+Informatics: Focus on machine learning of cell patterns} in \pubname{Linking
+Literature, Information, and Knowledge for Biology}, Lecture Notes in Computer
+Science, vol.  6004, pp. 8--18, 2010 \showdoi{10.1007/978-3-642-13131-8_2}
+
+\end{enumerate}
+
+\section{Co-authorships}
+
+\subsubsection{Peer-reviewed journal publications}
+
+\begin{enumerate}[resume]
+
 \item Oleksandr M. Maistrenko\costar,  Daniel R. Mende\costar,  Mechthild
 Luetge, Falk Hildebrand,  Thomas S. B. Schmidt,  Simone S. Li, \textbf{Luis
 Pedro Coelho},  Jaime Huerta-Cepas,  Shinichi Sunagawa,  Peer Bork
@@ -226,11 +371,6 @@ Pedro Coelho},  Jaime Huerta-Cepas,  Shinichi Sunagawa,  Peer Bork
 prokaryotic strain diversity} \href{biorXiv
 2019}{https://doi.org/10.1101/735696}
 
-\end{enumerate}
-
-\subsection{Peer-Reviewed Research Papers}
-
-\begin{enumerate}[resume]
 
 \item Federico M. Ibarbalz, Nicolas Henry, Manoela C. Brandão, Séverine
 Martini, Greta Busseni, Hannah Byrne, \textbf{Luis Pedro Coelho}, Hisashi Endo,
@@ -266,12 +406,6 @@ Forslund, Shinichi Sunagawa, Georg Zeller, Jaime Huerta-Cepas, \textbf{Luis
 Pedro Coelho}, Peer Bork `proGenomes2: an improved database for accurate and
 consistent habitat, taxonomic and functional annotations of prokaryotic genomes
 in \pubname{Nucleic Acids Research}, 2019 \showdoi{10.1093/nar/gkz1002}
-
-\item \textbf{Luis Pedro Coelho}, Renato Alves, Paulo Monteiro, Jaime
-Huerta-Cepas, Ana Teresa Freitas, Peer Bork \emph{NG-meta-profiler: fast
-processing of metagenomes using NGLess, a domain-specific language} in
-\pubname{Microbiome} vol.\ 7, 84, 2019 \showdoi{10.1186/s40168-019-0684-8}
-\contribution{I conceived of the concept, co-wrote the software and the manuscript}
 
 \item Jakob Wirbel\costar, Paul Theodor Pyl\costar, Ece Kartal, Konrad Zych,
 Alireza Kashani, Alessio Milanese, Jonas S Fleck, Anita Y Voigt, Albert
@@ -347,16 +481,6 @@ Põlme, Shinichi Sunagawa, Martin Ryberg, Leho Tedersoo, and Peer Bork
 \contribution{I contributed to the analysis of metagenomics data, in particular
 building a gene catalogue of the soil microbiome.}
 
-
-\item \textbf{Luis Pedro Coelho}, Jens Kultima, Paul Costea, Coralie Fournier,
-Yuanlong Pan, Gail Czarnecki-Maulden, Matthew Hayward, Kristoffer Forslund,
-Patrick Descombes, Janet Jackson, Qinghong Li, and Peer Bork \emph{Similarity
-of the dog and human gut microbiomes in gene content and response to diet} in
-\pubname{Microbiome}, vol 6:72, 2018 \showdoi{10.1186/s40168-018-0450-3}
-\contribution{I designed and implemented the analysis strategy, wrote the first
-version of the manuscript, and lead the subsequent incorporation of co-author
-suggestions.}
-
 \item Katri Korpela, Paul Costea, \textbf{Luis Pedro Coelho}, Stephanie
 Kandels-Lewis, Gonneke Willemsen, Dorret I Boomsma, Nicola Segata, Peer Bork
 \emph{Selective maternal seeding and environment shape the human gut
@@ -373,20 +497,6 @@ microbiome} in \pubname{Molecular Systems Biology}, vol.\ 13(12), pp.\ 960,
 \contribution{I contributed to the analysis and interpretation of the
 metagenomics data and discussions of statistical methodology.}
 
-\item \textbf{Luis Pedro Coelho}, \emph{Jug: Software for parallel reproducible
-computation in Python} in \pubname{Journal of Open Research
-Software}, 2017 \showdoi{10.5334/jors.161}
-\contribution{I designed and implemented the software presented and wrote the
-manuscript.}
-
-\item Sebastien Colin\costar, \textbf{Luis Pedro Coelho}\costar, Shinichi
-Sunagawa, Chris Bowler, Eric Karsenti, Peer Bork, Rainer Pepperkok, Colomban de
-Vargas, \emph{Quantitative 3D-Imaging of Environmental Microbial Eukaryotes
-using Automated Fluorescence Microscopy} in \pubname{eLife}, vol.\ 6:e26066,
-2017 \showdoi{10.7554/eLife.26066.001}.
-\contribution{I designed and implemented the computational analysis necessary
-for the method presented in the paper and participated in the writing of the
-manuscript.}
 
 \item Paul I Costea, Georg Zeller, Shinichi Sunagawa, Eric Pelletier, Adriana
 Alberti, Florence Levenez, Melanie Tramontano, Marja Driessen, Rajna Hercog,
@@ -457,32 +567,6 @@ elicited by Plasmodium berghei infection} in \pubname{Parasites \& Vectors}
 \contribution{I supervised the first-author, who was, at the time a PhD
 student, in the statistical analysis of the RNA-seq data.}
 
-\item Shinichi Sunagawa\costar, \textbf{Luis Pedro Coelho}\costar, Samuel
-Chaffron\costar, Jens Roat Kultima, Karine Labadie, Guillem Salazar, Bardya
-Djahanschiri, Georg Zeller, Daniel R. Mende, Adriana Alberti, Francisco M.
-Cornejo-Castillo, Paul I. Costea, Corinne Cruaud, Francesco d'Ovidio, Stefan
-Engelen, Isabel Ferrera, Josep M. Gasol, Lionel Guidi, Falk Hildebrand, Florian
-Kokoszka, Cyrille Lepoivre, Gipsi Lima-Mendez, Julie Poulain, Bonnie T. Poulos,
-Marta Royo-Llonch, Hugo Sarmento, Sara Vieira-Silva, Céline Dimier, Marc
-Picheral, Sarah Searson, Stefanie Kandels-Lewis, Tara Oceans coordinators,
-Chris Bowler, Colomban de Vargas, Gabriel Gorsky, Nigel Grimsley, Pascal
-Hingamp, Daniele Iudicone, Olivier Jaillon, Fabrice Not, Hiroyuki Ogata,
-Stephane Pesant, Sabrina Speich, Lars Stemmann, Matthew B. Sullivan, Jean
-Weissenbach, Patrick Wincker, Eric Karsenti, Jeroen Raes, Silvia G. Acinas,
-Peer Bork, \emph{Structure and Function of the Global Ocean Microbiome} in
-\pubname{Science} 348 (6237), 1261359, 2015 \showdoi{10.1126/science.1261359}
-\contribution{As co-first author, I performed analysis of the data, including
-linking the metagenomics data to the environmental parameters, as well as the
-comparison to the human gut (this required extending existing software tools
-which were unable to scale to this dataset); and helped draft the manuscript.}
-
-\item \textbf{Luis Pedro Coelho}, Catarina Pato, Ana Friães, Ariane Neumann,
-Maren von Köckritz-Blickwede, Mário Ramirez, João André Carriço,
-\emph{Automatic determination of NET (neutrophil extracellular traps) coverage
-in fluorescent microscopy images} in \pubname{Bioinformatics} 31 (14):
-2364--2370, 2015 \showdoi{10.1093/bioinformatics/btv156}
-\contribution{I conceived and implemented the algorithm, and wrote the
-manuscript.}
 
 \item Ana C. Pena, Mafalda R. Pimentel, Helena Manso, Rita Vaz-Drago, Daniel
 Pinto-Neves, Francisco Aresta-Branco, Filipa Rijo-Ferreira, Fabien Guegan,
@@ -520,36 +604,6 @@ Peer Bork, \emph{Metagenomic species profiling using universal phylogenetic
 marker genes} in \pubname{Nature Methods}, 2013 \showdoi{10.1038/nmeth.2693}
 \contribution{I implemented the stand-alone version of the published metagenomics tool.}
 
-\item \textbf{Luis Pedro Coelho}, Joshua D. Kangas, Armaghan Naik, Elvira
-Osuna-Highley, Estelle Glory-Afshar, Margaret Fuhrman, Ramanuja Simha, Peter B.
-Berget, Jonathan W. Jarvik, and Robert F. Murphy, \emph{Determining the
-subcellular location of new proteins from microscope images using local
-features} in \pubname{Bioinformatics}, 2013 \showdoi{10.1093/bioinformatics/btt392}
-\contribution{I designed and implemented the proposed algorithm, collected
-microscopy data (in collaboration with other authors), and wrote the
-manuscript.}
-
-\item \textbf{Luis Pedro Coelho} Mahotas: Open source software for scriptable
-computer vision, \pubname{Journal of Open Research Software}, vol.\ 1, 2013
-\showdoi{10.5334/jors.ac}
-\contribution{I implemented the underlying computer vision software and the manuscript.}
-
-\item \textbf{Luis Pedro Coelho}\costar, Tao Peng\costar, and Robert F.
-Murphy, \emph{Quantifying the distribution of probes between subcellular
-locations using unsupervised pattern unmixing} in \pubname{Bioinformatics},
-vol.\ 26 (12), pp.\ i7--i12, 2010 \showdoi{10.1093/bioinformatics/btq220}
-\contribution{I conceived of and implemented one of the methods presented and
-wrote the manuscript.}
-
-\item \textbf{Luis Pedro Coelho}, Amr Ahmed, Andrew Arnold, Joshua Kangas,
-Abdul-Saboor Sheikh, Eric P. Xing, William W. Cohen, and Robert F. Murphy,
-\emph{Structured Literature Image Finder: Extracting Information from Text and
-Images in Biomedical Literature} in \pubname{Lecture Notes in Bioinformatics},
-vol.\ 6004, pp.\ 23--32, 2010 \showdoi{10.1007/978-3-642-13131-8_4}
-\contribution{With the paper below, this forms a package on the SLIF project,
-where I enhanced the image analysis pipeline (for the analysis of figures in
-published scientific literature). I wrote the first draft of this manuscript
-and helped draft the one below.}
 
 \item Amr Ahmed, Andrew Arnold, \textbf{Luis Pedro Coelho}, Joshua Kangas,
 Abdul-Saboor Sheikk, Eric P. Xing, William W. Cohen, \emph{Structured
@@ -558,16 +612,9 @@ Literature Image Finder: Parsing Text and Figures in Biomedical Literature} in
 vol.\ 8, pp.\ 151--154, 2010 \showdoi{10.1016/j.websem.2010.04.002}
 \end{enumerate}
 
-\subsection{Peer-reviewed Conference Proceedings}
+\subsubsection{Peer-reviewed Conference Proceedings}
 
 \begin{enumerate}[resume]
-\item \textbf{Luis Pedro Coelho}, Aabid Shariff, and Robert F. Murphy;
-\emph{Nuclear segmentation in microscope cell images: A hand-segmented dataset
-and comparison of algorithms} in \pubname{Proceedings of IEEE International
-Symposium in Biomedical Imaging}, 2009 \showdoi{10.1109/ISBI.2009.5193098}
-\contribution{I acquired (part of) the microscopy data, built the
-hand-segmented dataset, implemented the methods and wrote the first draft of
-the manuscript.}
 
 \item Taraz Buck, Arvind Rao, \textbf{Luis Pedro Coelho}, Margaret Fuhrman,
 Jonathan W. Jarvik, Peter B. Berget, and Robert F. Murphy; \emph{Cell Cycle
@@ -575,14 +622,6 @@ Dependence of Protein Subcellular Location Inferred from Static, Asynchronous
 Images} in \pubname{Conference Proceedings of the IEEE Engineering in Medical
 and Biology Society}, pp. 1016--1019, 2009 \showdoi{10.1109/IEMBS.2009.5332888}
 \contribution{I helped the first author acquire relevant microscopy data.}
-
-\item \textbf{Luis Pedro Coelho} and Robert Murphy; \emph{Identifying
-Subcellular Locations from Images of Unknown Resolution} in
-\pubname{Bioinformatics Research and Development}, Communications in Computer
-and Information Science, vol.\ 13, pp.\ 235--242, 2008
-\showdoi{10.1007/978-3-540-70600-7_18}
-\contribution{I implemented the algorithm, ran the tests, and wrote the first
-draft of the paper.}
 
 \item Amina Chebira, \textbf{Luis Pedro Coelho}, Aliaksei Sandryhaila, Stephen
 Lin, William G. Jenkinson, Jeremiah MacSleyne, Christopher Hoffman, Philipp
@@ -593,28 +632,17 @@ IEEE International Conference on Image Processing}, 2007
 \contribution{I developed and implemented one of the methods presented in the
 paper.}
 
-\item \textbf{Luis Pedro Coelho} and Arlindo Oliveira; \emph{Dotted Suffix
-Trees: A Structure for Approximate Text Indexing} in \pubname{String Processing
-and Information Retrieval}, Lecture Notes in Computer Science, vol.\ 4209, pp.\
-329--336, 2006 \showdoi{10.1007/11880561_27}
-\contribution{I developed and implemented the algorithm and wrote the first
-draft of the manuscript.}
-
 \end{enumerate}
 
-\subsection{Review Articles}
+\subsubsection{Review Articles}
 \begin{enumerate}[resume]
-\item \textbf{Luis Pedro Coelho}, Estelle Glory-Afshar, Joshua Kangas, Shannon
-Quinn, Aabid Shariff, and Robert F. Murphy; \emph{Principles of Bioimage
-Informatics: Focus on machine learning of cell patterns} in \pubname{Linking
-Literature, Information, and Knowledge for Biology}, Lecture Notes in Computer
-Science, vol.  6004, pp. 8--18, 2010 \showdoi{10.1007/978-3-642-13131-8_2}
 
 \item Aabid Shariff, Joshua Kangas, \textbf{Luis Pedro Coelho}, Shannon Quinn,
 and Robert F. Murphy; \emph{Automated Image Analysis for High Content Screening
 and Analysis} in \pubname{Journal of Biomolecular Screening}, August 2010, pp.\
 726--734 \showdoi{10.1177/1087057110370894}
 \end{enumerate}
+
 \subsection{Books}
 \begin{enumerate}
 \item \textbf{Luis Pedro Coelho}, Willi Richert; \emph{Building Machine
