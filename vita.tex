@@ -25,6 +25,7 @@
         ItalicFont={Linux Libertine O Italic}]
 
 \font\Textit="Linux Libertine O/I:+onum" at 10pt
+\font\HighlightFont="Linux Libertine O/I:+onum" at 10pt
 \font\CvItem="Lucida Sans Regular:mapping=tex-text" at 9pt
 \font\Date="Lucida Sans Demibold Roman:mapping=tex-text" at 9pt
 \setmainfont[
@@ -62,7 +63,8 @@
 }
 \newcommand\ignore[1]{\relax}
 \newcommand\pubname[1]{\textsc{#1}}
-\newcommand\contribution[1]{\relax\hfill\break\textbf{My contribution}: \textit{#1}}
+%\newcommand\contribution[1]{\relax\hfill\break\textbf{My contribution}: \textit{#1}}
+\newcommand\contribution[1]{\relax}
 
 \newcommand\costar{${}^{*}$}
 \newcommand\cosenior{†}
@@ -80,7 +82,7 @@
 \begin{minipage}[t]{0.56\linewidth}%
 \head LUIS PEDRO COELHO\\
 \headtwo \textcolor{darkg}{Curriculum Vitæ}\\
-\CvItem October 28, 2021 % DATE
+\CvItem December 16, 2021 % DATE
 
 \end{minipage}
 \hfill
@@ -116,7 +118,7 @@ Observations or Soft Evidence}, advised by Prof.\ Arlindo Oliveira.
 \cvitem[2004]{BSc in computer science, Instituto Superior Técnico (Technical University Lisbon)}
 Graduated top of my class.
 
-\section{Professional Experience}
+\section{Professional experience}
 
 \cvitem[2018--present]{Junior Principal Investigator (Fudan University)}
 
@@ -175,54 +177,46 @@ I headed the local organising committee for the 2010 edition of this annual
 event. It took place in Pittsburgh and included, as speakers, cabinet-level
 Portuguese government officials, renowned researchers, artists, as well as
 participants from all around the US.
-\cvitem[2006--present]{Peer Review}
-I have reviewed papers for BMC~Bioinformatics, PLoS Computational Biology,
-Database, IEEE~Transactions in Computational Biology and~Bionformatics, and
-IEEE~Transactions on Medical Imaging. I have also reviewed grant proposals for
-the Czech Science Foundation and the French National Research Agency (ANR).
-\cvitem[2002--2004]{Producer for IST Theatre Group}
 
-\section{Teaching \& Mentoring}
+\section{Teaching \& mentoring (selected)}
 \cvitem[2019--present]{Co-teaches \emph{Scientific Communication} at Fudan University, a one-semester graduate course}
 \cvitem[2012--present]{Certified Software Carpentry Instructor}
 I have given lectures on Software Carpentry in Germany, Denmark, Cyprus, Jordan, and Spain.
-\cvitem[2012--2013]{Supervision of Students at Instituto Superior Técnico (IST, Lisbon)}
-Co-advised one Master thesis in Computer Science (Paulo Monteiro) and one in
-Biomedical Engineering (Joana Cruz). During 2012, I was co-mentor to
-bioinformaticians in Luisa M.\ Figueiredo's lab as part of a collaboration.
-\cvitem[2008--2011]{Mentoring Junior Members of Murphy Lab}
-During my PhD.\ studies, I had the opportunity to directly supervise and mentor
-several junior members of the Murphy Lab. This experience includes working with
-\textbf{paid undergraduate programmers} (Nathan Herzing and Jephthah
-Liddie one \textbf{MSc.\ student} (Shannon Quinn), \textbf{undergraduate
-students} performing lab work for credit (Jimmy Xu), and \textbf{high school
-students} volunteering over the summer (Peter Webb and Robert Webb).
-\cvitem[2012]{Programming for Scientists (short course)}
-\cvitem[2012]{Practical Tutorial in Next Generation Sequencing in ``Omics for Parasite Biology'' Course}
-\cvitem[2011--2015]{Tutorial in Lisbon Machine Learning Summer School}
 \cvitem[2009]{Programming for Scientists}
 I designed and taught a semester-long course on computer programming for
 scientists at Carnegie Mellon University.
 \cvitem[2008]{Teaching Assistant for Laboratory Methods for Computational Biologists (CMU)}
-\cvitem[2005]{Introduction to Computers Course in Cacém}
-I co-developed and co-taught an introductory course in computer usage in
-Cacém, an underprivileged neighborhood near Lisbon. This was pro-bono work.
-\cvitem[2005]{Teaching Assistant for Decision Support Systems (IST)}
 
-% \section{Language Skills}
-% I am bilingual in \textbf{English} and \textbf{Portuguese}. I speak and write
-% fluent \textbf{German} (I attended a German high-school, obtaining an Abitur;
-% and later spent a year as an exchange student at Technical University of
-% Vienna) and speak fluent \textbf{French}. I know basic \textbf{Luxembourgish}.
+\section{Bibliometric statistics}
+
+\textbf{Total number of citations}: 8,736 (Google Scholar); 5,201 (Web of Science)
+\\
+\textbf{h-index}: 32 (Google Scholar); 27 (Web of Science)
+
+\begin{center}
+    \includegraphics[height=28ex]{2021-11-30_citations.pdf}
+\end{center}
+
+\section{Language skills}
+
+I am bilingual in \textbf{English} and \textbf{Portuguese}. I speak and write
+fluent \textbf{German} (I attended a German high-school, obtaining an Abitur;
+and later spent a year as an exchange student at Technical University of
+Vienna) and speak fluent \textbf{French}. I know basic \textbf{Luxembourgish}.
+
 
 \pagebreak
 \section{Publications}
-Google scholar profile: \href%
+
+Google scholar profile: \\
+\href%
     {http://scholar.google.com/citations?user=qTYua0cAAAAJ}%
     {http://scholar.google.com/citations?user=qTYua0cAAAAJ}
 
 \medskip
+
 \medskip
+
 
 \section{First or corresponding author}
 {\small (includes co-first/co-corresponding author publications.)}
@@ -247,6 +241,15 @@ Correction of de novo metagenomic assemblies} at \pubname{BioRxiv} 2021
 \subsubsection{Peer-reviewed journal publications}
 
 \begin{enumerate}[resume]
+
+\item \textbf{Luis Pedro Coelho}, Renato Alves, Álvaro Rodríguez del Río,
+Pernille Neve Myers, Carlos P. Cantalapiedra, Joaquín Giner-Lamia,Thomas
+Sebastian Schmidt, Daniel R. Mende, Askarbek Orakov, Ivica Letunic, Falk
+Hildebrand, Thea Van Rossum, Sofia K. Forslund, Supriya Khedkar, Oleksandr M.
+Maistrenko, Shaojun Pan, Longhao Jia, Pamela Ferretti, Shinichi Sunagawa,
+Xing-Ming Zhao, Henrik Bjørn Nielsen, Jaime Huerta-Cepas⁺, and Peer Bork⁺,
+\emph{Towards the biogeography of prokaryotic genes} at \pubname{Nature} 2022
+\showdoi{10.1038/s41586-021-04233-4}
 
 \item Célio Dias Santos-Junior, Shaojun Pan, Xing-Ming Zhao, \textbf{Luis Pedro
 Coelho}, \emph{MACREL: antimicrobial peptide screening in genomes and
@@ -277,7 +280,7 @@ manuscript.}
 Sunagawa, Chris Bowler, Eric Karsenti, Peer Bork, Rainer Pepperkok, Colomban de
 Vargas, \emph{Quantitative 3D-imaging for cell biology and ecology of
 environmental microbial eukaryotes} in \pubname{eLife}, vol.\ 6:e26066, 2017
-\showdoi{10.7554/eLife.26066.001}.
+\showdoi{10.7554/eLife.26066.001}
 \contribution{I designed and implemented the computational analysis necessary
 for the method presented in the paper and participated in the writing of the
 manuscript.}
@@ -412,17 +415,17 @@ Following Faecal Microbiota Transplantation} in \pubname{BioRxiv} 2021
     Zimmermann-Kogadeeva\costar, Lajos Markó\costar, Judith
     Aron-Wisnewsky\costar, Trine Nielsen\costar, Lucas Moitinho-Silva, Thomas
     S. B.  Schmidt, Gwen Falony, Sara Vieira-Silva, Solia Adriouch, Renato J.
-    Alves, Karen Assmann, Jean-Philippe Bastard, Till Birkner, Robert Caesar ,
+    Alves, Karen Assmann, Jean-Philippe Bastard, Till Birkner, Robert Caesar,
     Julien Chilloux, \textbf{Luis Pedro Coelho}, Leopold Fezeu, Nathalie
     Galleron, Gerard Helft, Richard Isnard, Boyang Ji, Michael Kuhn, Emmanuelle
     Le Chatelier, Antonis Myridakis, Lisa Olsson, Nicolas Pons, Edi Prifti,
-    Benoit Quinquis, Hugo Roume, Joe-Elie Salem , Nataliya Sokolovska,
+    Benoit Quinquis, Hugo Roume, Joe-Elie Salem, Nataliya Sokolovska,
     Valentina Tremaroli, Mireia Valles-Colomer, Christian Lewinter, Nadja B
     Søndertoft, Helle Krogh Pedersen, Tue H Hansen, \textit{The MetaCardis
     Consortium}, Jens Peter Gøtze, Lars Køber, Henrik Vestergaard9,25, Torben
     Hansen9, Jean-Daniel Zucker7,20,21, Serge Hercberg, Jean-Michel Oppert,
     Ivica Letunic, Jens Nielsen, Fredrik Bäckhed, S.  Dusko Ehrlich,
-    Marc-Emmanuel Dumas, Jeroen Raes, Oluf Pedersen , Karine Clément\cosenior,
+    Marc-Emmanuel Dumas, Jeroen Raes, Oluf Pedersen, Karine Clément\cosenior,
     Michael Stumvoll\cosenior, Peer Bork\cosenior \emph{Combinatorial, additive
     and dose-dependent drug- microbiome associations} at \pubname{Nature} 2021
     (\textit{in press})
@@ -492,7 +495,7 @@ Carmichael, Céline Dimier, Joannie Ferland, Stefanie Kandels, Marc Picheral,
 Sergey Pisarev, Julie Poulain, Tara Oceans Coordinators, Silvia G. Acinas,
 Marcel Babin, Peer Bork, Chris Bowler, Colomban de Vargas, Lionel Guidi, Pascal
 Hingamp, Daniele Iudicone, Lee Karp-Boss, Eric Karsenti, Hiroyuki Ogata,
-Stephane Pesant, Sabrina Speich, Matthew B. Sullivan, , Patrick Wincker, and
+Stephane Pesant, Sabrina Speich, Matthew B. Sullivan, Patrick Wincker, and
 Shinichi Sunagawa, \emph{Gene Expression Changes and Community Turnover
 Differentially Shape the Global Ocean Metatranscriptome} in \pubname{Cell},
 2019 \showdoi{10.1016/j.cell.2019.10.014}
@@ -501,7 +504,7 @@ Differentially Shape the Global Ocean Metatranscriptome} in \pubname{Cell},
 Alireza Kashani, Alessio Milanese, Jonas S Fleck, Anita Y Voigt, Albert
 Palleja, Ruby P Ponnudurai, Shinichi Sunagawa, \textbf{Luis Pedro Coelho},
 Petra Schrotz-King, Emily Vogtmann, Nina Habermann, Emma Niméus, Andrew M
-Thomas, Paolo Manghi, Sara Gandini, Davide Serrano, Sayaka Mizutani , Hirotsugu
+Thomas, Paolo Manghi, Sara Gandini, Davide Serrano, Sayaka Mizutani, Hirotsugu
 Shiroma, Satoshi Shiba, Tatsuhiro Shibata, Shinichi Yachida, Takuji Yamada,
 Levi Waldron, Alessio Naccarati, Nicola Segata, Rashmi Sinha, Cornelia M.
 Ulrich, Hermann Brenner, Manimozhiyan Arumugam, Peer Bork, Georg Zeller
@@ -603,7 +606,7 @@ Delphine Saulnier, Karen P Scott, Bhagirath Singh, Kathleen Slezak, Patrick
 Veiga, James Versalovic, Liping Zhao, Erwin G Zoetendal, S Dusko Ehrlich, Joel
 Dore, and Peer Bork \emph{Towards standards for human fecal sample processing
 in metagenomic studies} in \pubname{Nature Biotechnology} vol.\ 35(11), pp.\
-1069--1076, 2017 \showdoi{10.1038/nbt.3960}.
+1069--1076, 2017 \showdoi{10.1038/nbt.3960}
 \contribution{I contributed in the computational analysis of the samples in the
 benchmark.}
 
@@ -741,8 +744,11 @@ Learning Systems with Python}, Packt Publishing, 2013 (first ed.); 2015
 (second ed.); 2018 (third ed.)
 \end{enumerate}
 
+\break
 \subsection{Invited Talks}
 \begin{enumerate}
+\item \emph{Micropeptides: Biogenesis and Function/GPCRs}, Micropeptides:
+    Biogenesis and Function/GPCRs Keystone Symposium, April 2022 (forthcoming)
 \item \emph{High-throughput fluorescence microscopy of environmental samples
     obtains single-cell phenotypic measurements}, Paris Single Cell Day 2018,
     October 2018
@@ -751,7 +757,7 @@ Learning Systems with Python}, Packt Publishing, 2013 (first ed.); 2015
     2018
 \item \emph{Life in Words and Pictures: sequencing and imaging for analysing
     microbial communities}, Dept.\ of Biomedical Research, University of Bern,
-    November 2017.
+    November 2017
 \item \emph{Statistical tools for analysing the microbiome in environmental and
     clinical applications}, Novo Nordisk Foundation Center for Basic Metabolic
     Research, October 2017
@@ -801,6 +807,10 @@ International Graduate School of Bioinformatics and Genome Research, July 2008
 \subsection{Selected Conference Talks}
 
 \begin{enumerate}
+\item Shaojun Pan, Chengkai Zhu, Xing-Ming Zhao, and \textbf{Luis Pedro
+Coelho} \emph{SemiBin: Incorporating information from reference genomes with
+semi-supervised deep learning leads to better metagenomic assembled genomes
+(MAGs)}, mVIF.2 (Microbiome Virtual International Forum), Online, 2021
 \item \textbf{Luis Pedro Coelho}*, Sebastien Colin*, Shinichi Sunagawa, Eric
 Karsenti, Peer Bork, Rainer Pepperkok, and Colomban de Vargas
 \emph{Environmental High-content Fluorescence Microscopy (e-HCFM) of Tara
