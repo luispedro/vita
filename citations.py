@@ -38,7 +38,7 @@ gscholar_citations = np.array([
     1416,
     2056,
     2782,
-    2097,
+    2148,
     ])
 
 wos_citations_dict = {
@@ -53,7 +53,7 @@ wos_citations_dict = {
     2019:987,
     2020:1393,
     2021:1930,
-    2022:1198,
+    2022:1251,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
@@ -92,17 +92,17 @@ h_ax.clear()
 h_ax.plot(h_index_data['Year_frac'], h_index_data['WoS'], '-o', ms=4, c='#7570b3', label='Web of Science')
 h_ax.plot(h_index_data['Year_frac'], h_index_data['Google'], '-o', ms=4, c='#1b9e77', label='Google')
 
-cit_ax.plot(years + .5, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
-cit_ax.plot(years + .5, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label='Google Scholar')
+cit_ax.plot(years, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
+cit_ax.plot(years, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label='Google Scholar')
 
 h_ax.set_xticks(years[::2])
 h_ax.set_xticklabels([(str(int(y)) if y != 2022 else "2022*") for y in years[::2]])
 cit_ax.legend(loc='best')
-cit_ax.set_xlabel("Year\n(Note: 2022 is incomplete)")
+cit_ax.set_xlabel("Year (2022 is incomplete)")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
 
 h_ax.set_ylabel("h-index")
-h_ax.set_xlabel("Year\n(Note: 2022 is incomplete)")
+h_ax.set_xlabel("Year (2022 is incomplete)")
 
 sns.despine(fig, trim=True)
 fig.tight_layout()
