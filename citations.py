@@ -38,7 +38,7 @@ gscholar_citations = np.array([
     1416,
     2056,
     2782,
-    2148,
+    2508,
     ])
 
 wos_citations_dict = {
@@ -53,13 +53,13 @@ wos_citations_dict = {
     2019:987,
     2020:1393,
     2021:1930,
-    2022:1251,
+    2022:1513,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
 
 years = years.astype(float)
-years[-1] = 2021. + 8/12.
+years[-1] = 2021. + 9.5/12.
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
 h_index_data.columns = ['Year', 'Mon', 'Google', 'WoS']
@@ -89,23 +89,33 @@ cit_ax, h_ax = axes
 cit_ax.clear()
 h_ax.clear()
 
-h_ax.plot(h_index_data['Year_frac'], h_index_data['WoS'], '-o', ms=4, c='#7570b3', label='Web of Science')
-h_ax.plot(h_index_data['Year_frac'], h_index_data['Google'], '-o', ms=4, c='#1b9e77', label='Google')
+h_ax.plot(h_index_data['Year_frac'], h_index_data['WoS'], '-o', ms=2, c='#7570b3', label='Web of Science')
+h_ax.plot(h_index_data['Year_frac'], h_index_data['Google'], '-o', ms=2, c='#1b9e77', label='Google')
 
 cit_ax.plot(years, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
 cit_ax.plot(years, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label='Google Scholar')
 
-h_ax.set_xticks(years[::2])
-h_ax.set_xticklabels([(str(int(y)) if y != 2022 else "2022*") for y in years[::2]])
+#X_TICKS = np.concatenate((years[::2],[2023]))
+X_TICKS = years[::2]
+h_ax.set_xticks(X_TICKS)
+h_ax.set_xticklabels([(str(int(x)) if x != 2023 else "2022*") for x in X_TICKS])
+h_ax.set_xlim(2012.5, 2023.1)
+
+
 cit_ax.legend(loc='best')
-cit_ax.set_xlabel("Year (2022 is incomplete)")
+cit_ax.set_xlabel("Year")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
+cit_ax.set_xlim(2010.5, 2023.1)
+cit_ax.grid(True, axis='both', clip_on=True)
 
 h_ax.set_ylabel("h-index")
-h_ax.set_xlabel("Year (2022 is incomplete)")
+#h_ax.set_xlabel("Year (2022 is incomplete)")
+h_ax.set_xlabel("Year")
+h_ax.grid(True, axis='both', clip_on=True)
 
 sns.despine(fig, trim=True)
 fig.tight_layout()
+fig.show()
 fig.savefig('2022-xx-xx__citations.svg')
 fig.savefig('2022-xx-xx__citations.pdf')
 fig.savefig('2022-xx-xx__citations.png', dpi=300)
