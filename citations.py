@@ -37,8 +37,8 @@ gscholar_citations = np.array([
      885,
     1416,
     2056,
-    2782,
-    2508,
+    2787,
+    2650,
     ])
 
 wos_citations_dict = {
@@ -53,13 +53,14 @@ wos_citations_dict = {
     2019:987,
     2020:1393,
     2021:1930,
-    2022:1513,
+    2022:1601,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
 
 years = years.astype(float)
 years[-1] = 2021. + 9.5/12.
+years += 1
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
 h_index_data.columns = ['Year', 'Mon', 'Google', 'WoS']
@@ -82,7 +83,7 @@ months = {
 h_index_data['Time'] = h_index_data.apply(lambda x: datetime.datetime(year=x.Year, month=months[x.Mon], day=1), axis=1)
 h_index_data['Year_frac'] = h_index_data['Time'].dt.year + h_index_data['Time'].dt.month/12.
 
-fig,axes = plt.subplots(1,2,sharex=True)
+fig,axes = plt.subplots(1,2,sharex=True, figsize=(6.5,1.5))
 cit_ax, h_ax = axes
 
 
