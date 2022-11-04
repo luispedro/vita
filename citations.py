@@ -38,7 +38,7 @@ gscholar_citations = np.array([
     1416,
     2056,
     2787,
-    2650,
+    2653,
     ])
 
 wos_citations_dict = {
@@ -53,7 +53,7 @@ wos_citations_dict = {
     2019:987,
     2020:1393,
     2021:1930,
-    2022:1601,
+    2022:1610,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
