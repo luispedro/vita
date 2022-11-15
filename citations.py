@@ -10,6 +10,9 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 
 plt.rcParams['svg.fonttype'] = 'none'
+plt.rcParams['xtick.labelsize'] = 8
+plt.rcParams['ytick.labelsize'] = 8
+plt.rcParams['axes.labelsize'] = 'small'
 
 years = np.array([
     2011,
@@ -90,8 +93,8 @@ cit_ax, h_ax = axes
 cit_ax.clear()
 h_ax.clear()
 
-h_ax.plot(h_index_data['Year_frac'], h_index_data['WoS'], '-o', ms=2, c='#7570b3', label='Web of Science')
-h_ax.plot(h_index_data['Year_frac'], h_index_data['Google'], '-o', ms=2, c='#1b9e77', label='Google')
+h_ax.plot(h_index_data['Year_frac'], h_index_data['WoS'], '-', ms=2, c='#7570b3', label='Web of Science')
+h_ax.plot(h_index_data['Year_frac'], h_index_data['Google'], '-', ms=2, c='#1b9e77', label='Google')
 
 cit_ax.plot(years, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
 cit_ax.plot(years, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label='Google Scholar')
