@@ -55,8 +55,8 @@ wos_citations_dict = {
     2018:554,
     2019:987,
     2020:1393,
-    2021:1930,
-    2022:1927,
+    2021:1949,
+    2022:1973,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
