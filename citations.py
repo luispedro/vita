@@ -27,22 +27,27 @@ years = np.array([
     2020,
     2021,
     2022,
+    2023,
     ])
 
 gscholar_citations = np.array([
-      42,
-      45,
-      56,
-     119,
-     247,
-     484,
-     601,
-     885,
-    1416,
-    2056,
-    2787,
-    3125,
+      43,
+      49,
+      54,
+     114,
+     246,
+     494,
+     609,
+     905,
+    1454,
+    2117,
+    2816,
+    3116,
+    2023,
     ])
+
+# Annualize
+gscholar_citations[-1] *= 12/8
 
 wos_citations_dict = {
     2011:22,
@@ -56,13 +61,14 @@ wos_citations_dict = {
     2019:987,
     2020:1393,
     2021:1949,
-    2022:1973,
+    2022:2136,
+    2023:1199,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
+wos_citations[-1] *= 12/8
 
 years = years.astype(float)
-years += 1
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
 h_index_data.columns = ['Year', 'Mon', 'Google', 'WoS']
@@ -100,7 +106,7 @@ cit_ax.plot(years, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web
 X_TICKS = years[::2]
 for ax in (cit_ax, h_ax):
     ax.set_xticks(X_TICKS)
-    ax.set_xticklabels([(str(int(x)) if x != 2023 else "2022*") for x in X_TICKS])
+    ax.set_xticklabels([str(int(x)) for x in X_TICKS])
     ax.set_xlabel('Year')
     ax.grid(True)
 
