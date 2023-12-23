@@ -120,7 +120,7 @@ cit_ax.set_xlim(2011.5, 2023.5)
 h_ax.set_ylabel("h-index")
 #h_ax.set_xlabel("Year (2022 is incomplete)")
 h_ax.set_xlabel("Year")
-h_ax.set_xlim(2012.5, 2023.5)
+h_ax.set_xlim(2012.5, 2024.3)
 
 sns.despine(fig, trim=True)
 fig.tight_layout()
