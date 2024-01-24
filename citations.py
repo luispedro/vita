@@ -43,7 +43,7 @@ gscholar_citations = np.array([
     2117,
     2816,
     3143,
-    2993,
+    3062,
     ])
 
 # Annualize
@@ -62,7 +62,7 @@ wos_citations_dict = {
     2020:1393,
     2021:1949,
     2022:2175,
-    2023:1760,
+    2023:1876,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
