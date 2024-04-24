@@ -1,7 +1,6 @@
 import numpy as np
 from matplotlib import style
 style.use('default')
-#%matplotlib qt
 
 
 import pandas as pd
@@ -28,6 +27,7 @@ years = np.array([
     2021,
     2022,
     2023,
+    2024,
     ])
 
 gscholar_citations = np.array([
@@ -43,11 +43,12 @@ gscholar_citations = np.array([
     2117,
     2816,
     3143,
-    3062,
+    3054,
+    1141,
     ])
 
 # Annualize
-# gscholar_citations[-1] *= 12/8
+gscholar_citations[-1] *= 12/4
 
 wos_citations_dict = {
     2011:22,
@@ -62,11 +63,12 @@ wos_citations_dict = {
     2020:1393,
     2021:1949,
     2022:2175,
-    2023:1973,
+    2023:2052,
+    2024:539,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
-#wos_citations[-1] *= 12/8
+wos_citations[-1] *= 12/4
 
 years = years.astype(float)
 
@@ -115,17 +117,14 @@ for ax in (cit_ax, h_ax):
 cit_ax.legend(loc='best')
 cit_ax.set_xlabel("Year")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
-cit_ax.set_xlim(2011.5, 2023.5)
+cit_ax.set_xlim(2011.5, 2024.5)
 
 h_ax.set_ylabel("h-index")
 #h_ax.set_xlabel("Year (2022 is incomplete)")
 h_ax.set_xlabel("Year")
-h_ax.set_xlim(2012.5, 2024.3)
+h_ax.set_xlim(2012.5, 2024.5)
 
 sns.despine(fig, trim=True)
 fig.tight_layout()
 fig.show()
 fig.savefig('citations-h-index.pdf')
-fig.savefig('2022-xx-xx__citations.svg')
-fig.savefig('2022-xx-xx__citations.pdf')
-fig.savefig('2022-xx-xx__citations.png', dpi=300)
