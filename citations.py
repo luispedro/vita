@@ -44,7 +44,7 @@ gscholar_citations = np.array([
     2816,
     3143,
     3054,
-    1425,
+    1542,
     ])
 
 # Annualize
@@ -98,8 +98,8 @@ fig,(cit_ax, h_ax) = plt.subplots(1, 2, sharex=False, figsize=(6.5,1.8))
 cit_ax.clear()
 h_ax.clear()
 
-h_ax.plot(h_index_data['Year_frac'], h_index_data['Google'], '-', ms=2, c='#1b9e77', label='Google')
-h_ax.plot(h_index_data['Year_frac'], h_index_data['WoS'], '-', ms=2, c='#7570b3', label='Web of Science')
+h_ax.plot('Year_frac', 'Google', data=h_index_data.drop_duplicates(subset='Google'), linestyle='-', ms=2, c='#1b9e77', label='Google')
+h_ax.plot('Year_frac', 'WoS', data=h_index_data.drop_duplicates(subset='WoS'), linestyle='-', ms=2, c='#7570b3', label='Web of Science')
 
 cit_ax.plot(years, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label='Google Scholar')
 cit_ax.plot(years, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
