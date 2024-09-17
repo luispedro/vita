@@ -44,11 +44,11 @@ gscholar_citations = np.array([
     2871,
     3200,
     3080,
-    2059,
+    2522,
     ])
 
 # Annualize
-gscholar_citations[-1] *= 12/5
+gscholar_citations[-1] *= 12/8.5
 
 wos_citations_dict = {
     2011:17,
@@ -64,11 +64,11 @@ wos_citations_dict = {
     2021:1915,
     2022:2162,
     2023:2011,
-    2024:1168,
+    2024:1565,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
-wos_citations[-1] *= 12/5
+wos_citations[-1] *= 12/8
 
 years = years.astype(float)
 
@@ -117,12 +117,12 @@ for ax in (cit_ax, h_ax):
 cit_ax.legend(loc='best')
 cit_ax.set_xlabel("Year")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
-cit_ax.set_xlim(2011.5, 2024.5)
+cit_ax.set_xlim(2011.5, 2025)
 
 h_ax.set_ylabel("h-index")
 #h_ax.set_xlabel("Year (2022 is incomplete)")
 h_ax.set_xlabel("Year")
-h_ax.set_xlim(2012.5, 2024.5)
+h_ax.set_xlim(2012.5, 2025)
 
 sns.despine(fig, trim=True)
 fig.tight_layout()
