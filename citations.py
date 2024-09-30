@@ -44,11 +44,11 @@ gscholar_citations = np.array([
     2871,
     3200,
     3080,
-    2522,
+    2611,
     ])
 
 # Annualize
-gscholar_citations[-1] *= 12/8.5
+gscholar_citations[-1] *= 12/9.
 
 wos_citations_dict = {
     2011:17,
@@ -64,11 +64,11 @@ wos_citations_dict = {
     2021:1915,
     2022:2162,
     2023:2011,
-    2024:1565,
+    2024:1641,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
-wos_citations[-1] *= 12/8
+wos_citations[-1] *= 12/9
 
 years = years.astype(float)
 
