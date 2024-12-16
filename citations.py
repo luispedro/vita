@@ -32,43 +32,43 @@ years = np.array([
 
 gscholar_citations = np.array([
       43,
-      49,
-      54,
-     114,
-     246,
-     494,
-     609,
-     905,
-    1458,
-    2137,
-    2871,
-    3212,
-    3101,
-    2731,
+      50,
+      57,
+     118,
+     247,
+     501,
+     602,
+     904,
+    1468,
+    2145,
+    2877,
+    3231,
+    3115,
+    3418,
     ])
 
 wos_citations_dict = {
     2011:17,
     2012:21,
     2013:24,
-    2014:52,
-    2015:123,
-    2016:241,
-    2017:309,
-    2018:498,
-    2019:915,
-    2020:1320,
-    2021:1915,
-    2022:2162,
-    2023:2011,
-    2024:1641,
+    2014:53,
+    2015:146,
+    2016:290,
+    2017:368,
+    2018:552,
+    2019:981,
+    2020:1385,
+    2021:1989,
+    2022:2221,
+    2023:2090,
+    2024:2145,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
 
 # Annualize
-gscholar_citations[-1] *= 12/9.5
-wos_citations[-1] *= 12/9
+gscholar_citations[-1] *= 12/11.5
+wos_citations[-1] *= 12/11.5
 
 years = years.astype(float)
 
@@ -105,7 +105,7 @@ cit_ax.plot(years, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label
 cit_ax.plot(years, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
 
 #X_TICKS = np.concatenate((years[::2],[2023]))
-X_TICKS = years[::2]
+X_TICKS = years[1::2]
 for ax in (cit_ax, h_ax):
     ax.set_xticks(X_TICKS)
     ax.set_xticklabels([str(int(x)) for x in X_TICKS])
@@ -118,11 +118,13 @@ cit_ax.legend(loc='best')
 cit_ax.set_xlabel("Year")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
 cit_ax.set_xlim(2011.5, 2025)
+cit_ax.set_ylim(0, 21_000)
 
 h_ax.set_ylabel("h-index")
 #h_ax.set_xlabel("Year (2022 is incomplete)")
 h_ax.set_xlabel("Year")
-h_ax.set_xlim(2012.5, 2025)
+h_ax.set_xlim(2012.5, 2025.5)
+h_ax.set_ylim(0, 50)
 
 sns.despine(fig, trim=True)
 fig.tight_layout()
