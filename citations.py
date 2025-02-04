@@ -1,5 +1,6 @@
 import numpy as np
 from matplotlib import style
+import matplotlib.ticker as ticker
 style.use('default')
 
 
@@ -44,7 +45,7 @@ gscholar_citations = np.array([
     2877,
     3231,
     3115,
-    3418,
+    3511,
     ])
 
 wos_citations_dict = {
@@ -61,14 +62,14 @@ wos_citations_dict = {
     2021:1989,
     2022:2221,
     2023:2090,
-    2024:2145,
+    2024:2319,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
 
 # Annualize
-gscholar_citations[-1] *= 12/11.5
-wos_citations[-1] *= 12/11.5
+#gscholar_citations[-1] *= 12/11.5
+#wos_citations[-1] *= 12/11.5
 
 years = years.astype(float)
 
@@ -115,6 +116,8 @@ for ax in (cit_ax, h_ax):
 
 
 cit_ax.legend(loc='best')
+cit_ax.yaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
+
 cit_ax.set_xlabel("Year")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
 cit_ax.set_xlim(2011.5, 2025)
