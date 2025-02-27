@@ -29,6 +29,7 @@ years = np.array([
     2022,
     2023,
     2024,
+    2025,
     ])
 
 gscholar_citations = np.array([
@@ -45,7 +46,8 @@ gscholar_citations = np.array([
     2877,
     3231,
     3115,
-    3511,
+    3555,
+     669,
     ])
 
 wos_citations_dict = {
@@ -62,16 +64,18 @@ wos_citations_dict = {
     2021:1989,
     2022:2221,
     2023:2090,
-    2024:2319,
+    2024:2380,
+    2025:325,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
 
 # Annualize
-#gscholar_citations[-1] *= 12/11.5
-#wos_citations[-1] *= 12/11.5
 
 years = years.astype(float)
+years_partial = years.copy()
+years_partial[-1] -= 10/12.
+
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
 h_index_data.columns = ['Year', 'Mon', 'Google', 'WoS']
@@ -102,8 +106,8 @@ h_ax.clear()
 h_ax.plot('Year_frac', 'Google', data=h_index_data.drop_duplicates(subset='Google'), linestyle='-', ms=2, c='#1b9e77', label='Google')
 h_ax.plot('Year_frac', 'WoS', data=h_index_data.drop_duplicates(subset='WoS'), linestyle='-', ms=2, c='#7570b3', label='Web of Science')
 
-cit_ax.plot(years, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label='Google Scholar')
-cit_ax.plot(years, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
+cit_ax.plot(years_partial, np.cumsum(gscholar_citations), '-o', ms=4, c='#1b9e77', label='Google Scholar')
+cit_ax.plot(years_partial, np.cumsum(wos_citations), '-o', ms=4, c='#7570b3', label='Web of Science')
 
 #X_TICKS = np.concatenate((years[::2],[2023]))
 X_TICKS = years[1::2]
@@ -114,13 +118,12 @@ for ax in (cit_ax, h_ax):
     ax.grid(True)
 
 
-
 cit_ax.legend(loc='best')
 cit_ax.yaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
 
 cit_ax.set_xlabel("Year")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
-cit_ax.set_xlim(2011.5, 2025)
+cit_ax.set_xlim(2011.5, 2025.5)
 cit_ax.set_ylim(0, 21_000)
 
 h_ax.set_ylabel("h-index")
