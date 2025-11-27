@@ -14,23 +14,7 @@ plt.rcParams['xtick.labelsize'] = 8
 plt.rcParams['ytick.labelsize'] = 8
 plt.rcParams['axes.labelsize'] = 'small'
 
-years = np.array([
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025,
-    ])
+years = np.arange(2011, 2026)
 
 gscholar_citations = np.array([
       43,
@@ -47,7 +31,7 @@ gscholar_citations = np.array([
     3285,
     3201,
     3510,
-    3211,
+    3780,
     ])
 
 wos_citations_dict = {
@@ -64,8 +48,8 @@ wos_citations_dict = {
     2021:1992,
     2022:2220,
     2023:2098,
-    2024:2395,
-    2025:1975,
+    2024:2373,
+    2025:2376,
     }
 
 wos_citations = np.array([wos_citations_dict[y] for y in years])
@@ -74,7 +58,7 @@ wos_citations = np.array([wos_citations_dict[y] for y in years])
 
 years = years.astype(float)
 years_partial = years.copy()
-years_partial[-1] -= 2/12.
+years_partial[-1] -= 1/12.
 
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
@@ -124,13 +108,13 @@ cit_ax.yaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
 cit_ax.set_xlabel("Year")
 cit_ax.set_ylabel("Number of citations\n(cumulative)")
 cit_ax.set_xlim(2011.5, 2026.0)
-cit_ax.set_ylim(0, 23_000)
+cit_ax.set_ylim(0, 24_000)
 
 h_ax.set_ylabel("h-index")
 #h_ax.set_xlabel("Year (2022 is incomplete)")
 h_ax.set_xlabel("Year")
 h_ax.set_xlim(2012.5, 2026.0)
-h_ax.set_ylim(0, 52)
+h_ax.set_ylim(0, 54)
 
 sns.despine(fig, trim=True)
 fig.tight_layout()
