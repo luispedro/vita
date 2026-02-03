@@ -31,34 +31,33 @@ gscholar_citations = np.array([
     3285,
     3201,
     3510,
-    3780,
+    4291,
     ])
 
-wos_citations_dict = {
-    2011:17,
-    2012:21,
-    2013:24,
-    2014:53,
-    2015:146,
-    2016:290,
-    2017:366,
-    2018:551,
-    2019:982,
-    2020:1382,
-    2021:1992,
-    2022:2220,
-    2023:2098,
-    2024:2373,
-    2025:2376,
-    }
+wos_citations = [
+      19, # 2011
+      21,
+      24,
+      52,
+     124,
+     242,
+     307,
+     496,
+     917,
+    1312,
+    1927,
+    2168,
+    2052,
+    2347,
+    2748,
+    ]
 
-wos_citations = np.array([wos_citations_dict[y] for y in years])
+wos_citations = np.array(wos_citations)
 
 # Annualize
 
 years = years.astype(float)
 years_partial = years.copy()
-years_partial[-1] -= 1/12.
 
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
