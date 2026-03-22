@@ -1,10 +1,6 @@
 import sys
 import requests
-import json
-import yaml
-import shutil
 
-from glob import glob
 base_url = 'https://api.crossref.org/works/'
 doi = '10.1038/s41586-021-04177-9'
 
@@ -29,9 +25,11 @@ def is_lpc(n):
 
 def reformat_meta(meta):
     [title] = meta['title']
-    try:
+    if meta['container-title']:
         [journal] = meta['container-title']
-    except:
+    elif meta['subtype'] == 'preprint' and meta.get('institution', [{}])[0].get('name') == 'bioRxiv':
+        journal = 'bioRxiv (PREPRINT)'
+    else:
         print(f'Could not parse journal. Please add manually')
         journal = '?'
     doi = meta['DOI']
@@ -91,9 +89,6 @@ def main(argv):
 
     meta = get_doi_meta(doi)
     remeta = reformat_meta(meta)
-    remeta
-    remeta['Authors']
-    remeta['Date']
     authors = [(aut if not is_lpc(aut) else f'\\textbf{{{aut}}}') for aut in remeta['Authors']]
     authors = ', '.join(authors)
 
