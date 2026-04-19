@@ -33,7 +33,40 @@
             enumitem
             wrapfig;
         };
+
+      localFonts = system:
+        let pkgs = pkgsFor system;
+        in pkgs.runCommand "vita-fonts" {} ''
+          mkdir -p $out/share/fonts/truetype
+          cp ${./fonts}/*.ttf $out/share/fonts/truetype/
+        '';
     in {
+      packages = forAllSystems (system:
+        let
+          pkgs = pkgsFor system;
+          tex = texFor system;
+          allFonts = [ pkgs.libertine pkgs.gentium-book-basic (localFonts system) "${tex}/share/texmf/fonts" ];
+          fontsConf = pkgs.makeFontsConf { fontDirectories = allFonts; };
+        in {
+          default = pkgs.stdenvNoCC.mkDerivation {
+            name = "vita";
+            src = self;
+            nativeBuildInputs = [ (pythonFor system) tex ] ++ allFonts;
+            buildPhase = ''
+              export MPLBACKEND=Agg
+              export HOME=$TMPDIR
+              export FONTCONFIG_FILE=${fontsConf}
+              python citations.py
+              xelatex vita.tex
+              xelatex vita.tex
+            '';
+            installPhase = ''
+              mkdir -p $out
+              cp vita.pdf citations-h-index.pdf $out/
+            '';
+          };
+        });
+
       apps = forAllSystems (system: {
         default = {
           type = "app";
@@ -50,13 +83,13 @@
       devShells = forAllSystems (system:
         let pkgs = pkgsFor system; in {
           default = pkgs.mkShell {
-            packages = [ (pythonFor system) (texFor system) pkgs.libertine ];
+            packages = [ (pythonFor system) (texFor system) pkgs.libertine pkgs.gentium-book-basic (localFonts system) ];
           };
           python = pkgs.mkShell {
             packages = [ (pythonFor system) ];
           };
           tex = pkgs.mkShell {
-            packages = [ (texFor system) pkgs.libertine ];
+            packages = [ (texFor system) pkgs.libertine pkgs.gentium-book-basic (localFonts system) ];
           };
         });
     };
