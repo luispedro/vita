@@ -28,7 +28,7 @@ def reformat_meta(meta):
     if meta['container-title']:
         [journal] = meta['container-title']
     elif meta['subtype'] == 'preprint' and meta.get('institution', [{}])[0].get('name') == 'bioRxiv':
-        journal = 'bioRxiv (PREPRINT)'
+        journal = 'bioRxiv'
     else:
         print(f'Could not parse journal. Please add manually')
         journal = '?'
