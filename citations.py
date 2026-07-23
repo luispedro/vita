@@ -15,26 +15,26 @@ plt.rcParams['ytick.labelsize'] = 8
 plt.rcParams['axes.labelsize'] = 'small'
 
 years = np.arange(2011, 2027)
-CITATIONS_LIM = 27_000
-H_INDEX_LIM = 56
+CITATIONS_LIM = 28_000
+H_INDEX_LIM = 58
 
 gscholar_citations = np.array([
       43,
       50,
       61,
-     123,
-     260,
-     536,
-     628,
-     935,
-    1488,
-    2209,
-    2929,
-    3285,
-    3201,
-    3510,
-    4291,
-    1435,
+     126,
+     266,
+     532,
+     634,
+     931,
+    1510,
+    2210,
+    2945,
+    3313,
+    3271,
+    3544,
+    4278,
+    2748,
     ])
 
 wos_citations = [
@@ -49,15 +49,15 @@ wos_citations = [
      124,
      242,
      307,
-     496,
-     916,
-    1310,
-    1928,
-    2171,
-    2051,
-    2357,
-    2863,
-     811,
+     495,
+     915,
+    1309,
+    1927,
+    2164,
+    2047,
+    2355,
+    2878,
+    1662,
     ]
 
 wos_citations = np.array(wos_citations)
@@ -66,7 +66,7 @@ wos_citations = np.array(wos_citations)
 
 years = years.astype(float)
 years_partial = years.copy()
-years_partial[-1] -= 1 - 4/12 # April
+years_partial[-1] -= 1 - 7/12 # July
 
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
