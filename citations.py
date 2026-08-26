@@ -34,7 +34,7 @@ gscholar_citations = np.array([
     3271,
     3544,
     4278,
-    2748,
+    3285,
     ])
 
 wos_citations = [
@@ -57,7 +57,7 @@ wos_citations = [
     2047,
     2355,
     2878,
-    1662,
+    2012,
     ]
 
 wos_citations = np.array(wos_citations)
@@ -66,7 +66,7 @@ wos_citations = np.array(wos_citations)
 
 years = years.astype(float)
 years_partial = years.copy()
-years_partial[-1] -= 1 - 7/12 # July
+years_partial[-1] -= 1 - 8/12 # August
 
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
@@ -124,7 +124,7 @@ cit_ax.set_ylim(0, CITATIONS_LIM)
 h_ax.set_ylabel("h-index")
 #h_ax.set_xlabel("Year (2022 is incomplete)")
 h_ax.set_xlabel("Year")
-h_ax.set_xlim(2012.5, 2026.5)
+h_ax.set_xlim(2012.5, 2027.0)
 if h_index_data['Google'].max() > H_INDEX_LIM or h_index_data['WoS'].max() > H_INDEX_LIM:
     raise ValueError(f"H_INDEX_LIM={H_INDEX_LIM} is too low for the data (max is {max(h_index_data['Google'].max(), h_index_data['WoS'].max())})")
 h_ax.set_ylim(0, H_INDEX_LIM)
