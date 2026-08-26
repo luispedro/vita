@@ -93,7 +93,7 @@ def main(argv):
     authors = ', '.join(authors)
 
     print(f'''
-\item {authors}, \emph{{{remeta["Title"]}}}, in \pubname{{{remeta["Journal"]}}}, {remeta["Year"]} \showdoi{{{remeta["Doi"]}}}
+\\item {authors}, \\emph{{{remeta["Title"]}}}, in \\pubname{{{remeta["Journal"]}}}, {remeta["Year"]} \\showdoi{{{remeta["Doi"]}}}
 ''')
 
 if __name__ == '__main__':
