@@ -17,6 +17,7 @@
           ps.matplotlib
           ps.pandas
           ps.seaborn
+          ps.pyyaml
         ]);
 
       texFor = system:

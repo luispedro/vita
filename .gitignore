@@ -6,3 +6,7 @@ classic.pdf
 vita-2pages.pdf
 citations-h-index.pdf
 result
+
+# talks-summary.tex is generated from talks.yaml by make-talks-summary.py
+talks-preview.pdf
+__pycache__/

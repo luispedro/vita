@@ -1,0 +1,776 @@
+- venue: "University of Bielefeld International Graduate School of Bioinformatics and Genome Research"
+  kind: "institutional-seminar"
+  title: "Unsupervised mixture pattern unmixing"
+  date: "2008-07"
+  location: "Bielefeld, Germany"
+  url: null
+  notes:
+
+- venue: "24th ISAC Congress"
+  kind: "from-abstract"
+  title: "Determining Resolvable Subcellular Location Categories as a Function of Image Resolution"
+  date: "2008-09"
+  location: "Budapest, Hungary"
+  url: null
+  notes:
+
+- venue: "4th CeBiTec Symposium BioImaging"
+  kind: "from-abstract"
+  title: "Proteome-scale analysis and modeling of subcellular location"
+  date: "2009-08"
+  location: "Bielefeld, Germany"
+  url: null
+  notes: "25–27 August"
+
+- venue: "University of Delaware, Computer and Information Sciences Department"
+  kind: "institutional-seminar"
+  title: "Studying the subcellular location space with bioimages and other data modalities"
+  date: "2011-09"
+  location: "Newark, Delaware, USA"
+  url: null
+  notes:
+
+- venue: "EMBO Practical Course on Microscopy: from single molecules to animals"
+  kind: "summer-school-lecture"
+  title: "Bioimage informatics: Computer vision for biology"
+  date: "2011-11"
+  location: "Pretoria, South Africa"
+  url: null
+  notes:
+
+- venue: "KDBIO Seminar"
+  kind: "institutional-seminar"
+  title: "Learning subcellular location from images and other sources of information"
+  date: "2012-02"
+  location: "Lisbon, Portugal"
+  url: null
+  notes:
+
+
+- venue: "EAO Seminar, Instituto Gulbenkian da Ciência"
+  kind: "institutional-seminar"
+  title: "Modeling subcellular location from images and other sources of information"
+  date: "2012-03"
+  location: "Oeiras, Portugal"
+  url: null
+  notes:
+
+
+- venue: "Priberam Machine Learning Lunch Seminar"
+  kind: "institutional-seminar"
+  title: "Modeling subcellular location from images and other sources of information"
+  date: "2012-06"
+  location: "Lisbon, Portugal"
+  url: null
+  notes:
+
+- venue: "Lisbon Machine Learning School II"
+  kind: "summer-school-lecture"
+  title: "Introduction to Python"
+  date: "2012-07-XX"
+  location: "Lisbon, Portugal"
+  url: "https://luispedro.org/files/talks/2012/lxmls.pdf"
+
+- venue: "Luxembourg Centre for Systems Biomedicine"
+  kind: "institutional-seminar"
+  title: "Modeling subcellular location from images and other sources of information"
+  date: "2012-07"
+  location: "Esch-sur-Alzette, Luxembourg"
+  url: null
+  notes:
+
+- venue: "Freiburg Institute for Advanced Studies"
+  kind: "institutional-seminar"
+  title: "Organizing the proteome with location and function topics"
+  date: "2013-04"
+  location: "Freiburg, Germany"
+  url: null
+  notes:
+
+
+- venue: "Bioinformatics Open Source Conference (BOSC)"
+  kind: "from-abstract"
+  title: "Jug: task-based parallelism for scientific workflows"
+  date: "2013-07-01"
+  location: "Berlin, Germany"
+  url: "https://www.open-bio.org/wiki/BOSC_2013"
+
+- venue: "European Bioimage Analysis Symposium"
+  kind: "invited-talk"
+  title: "Mahotas and the Python ecosystem for bioimage informatics applications"
+  date: "2013-10"
+  location: "Barcelona, Spain"
+  url: null
+  notes:
+
+- venue: "BrightTalk"
+  kind: "webinar"
+  title: "Machine learning: What it can do for you (and what it cannot)"
+  date: "2015-05"
+  location: "Online"
+  url: null
+  notes:
+
+- venue: "Station Biologique de Roscoff"
+  kind: "invited-talk"
+  title: "An analysis of 243 metagenomes collected by the Tara Oceans Projects"
+  date: "2015-07"
+  location: "Roscoff, France"
+  url: "https://www.sb-roscoff.fr/"
+
+- venue: "Luxembourg Centre for Systems Biomedicine"
+  kind: "institutional-seminar"
+  title: "Life in words and pictures: Sequencing and microscopy for the analysis of microbial communities"
+  date: "2015-09-01"
+  location: "Esch, Luxembourg"
+  url: null
+  notes:
+
+- venue: "Ecole Normale Supérieure"
+  kind: "summer-school-lecture"
+  title: "Structure and function of the ocean microbiome"
+  date: "2015-12"
+  location: "Paris, France"
+  url: "https://www.ens.fr/"
+  notes: " lecture at the course _Biology of ecological systems_"
+
+- venue: "PYCON Sette"
+  kind: "keynote"
+  title: "Looking at the oceans with computer vision in Python"
+  date: "2016-04-17"
+  location: "Florence, Italy"
+  url: "https://www.pycon.it/en/"
+
+- venue: "Lisbon Machine Learning School (LxMLS)"
+  kind: "summer-school-lecture"
+  title: "Machine learning methods and applications"
+  date: "2014-07-01"
+  location: "Lisbon, Portugal"
+  url: "https://lxmls.it.pt/2014/"
+
+- venue: "International Workshop on Technical Computing for Machine Learning and Mathematical Engineering"
+  kind: "invited-talk"
+  title: "Large-scale analysis of bioimages using Python"
+  date: "2014-09-01"
+  location: "Leuven, Belgium"
+  url: "https://www.esat.kuleuven.be/stadius/tcmm2014/program.php"
+
+
+- venue: "Python San Sebastian (PySS)"
+  kind: "keynote"
+  title: "Scientific computing with Python"
+  date: "2014-09-01"
+  location: "San Sebastian, Spain"
+  url: "https://pyss.org/"
+
+- venue: "O'Reilly Webcast"
+  kind: "webinar"
+  title: "Penalised regression in Python"
+  date: "2014-10-22"
+  location: "Online"
+  url: "https://www.oreilly.com/pub/e/3117"
+
+- venue: "Aquatic Sciences Meeting 2015"
+  kind: "from-abstract"
+  title: "Structure and function of the global ocean microbiome"
+  date: "2015-02-26"
+  location: "Granada, Spain"
+  url: "https://www.sgmeet.com/aslo/granada2015/"
+
+- venue: "Lisbon Machine Learning School (LxMLS)"
+  kind: "summer-school-lecture"
+  title: "Introduction to Python"
+  date: "2015-07-16"
+  location: "Lisbon, Portugal"
+  url: "https://luispedro.org/files/talks/2015/LxMLS-python-intro.pdf"
+
+- venue: "Ocean Sciences Meeting 2016"
+  kind: "from-abstract"
+  title: "Environmental High-content Fluorescence Microscopy (e-HCFM) of Tara-Oceans Samples Provides a View of Global Ocean Protist Biodiversity"
+  date: "2016-02-23"
+  location: "New Orleans, USA"
+  url: "https://osm.agu.org/2016/"
+
+- venue: "Microbiome Data Interpretation Workshop"
+  kind: "summer-school-lecture"
+  title: "NGLess and reproducible metagenomic analysis"
+  date: "2017-10-25"
+  location: "Copenhagen, Denmark"
+  #url: "https://www.eventbrite.com/e/workshop-microbiome-data-interpretation-tickets-34791984763"
+  url: "https://sciencecluster.dk/event/workshop-microbiome-data-interpretation/"
+
+- venue: "Novo Nordisk Foundation Center for Basic Metabolic Research"
+  kind: "summer-school-lecture"
+  title: "Statistical tools for analysing the microbiome in environmental and clinical applications"
+  date: "2017-10"
+  location: "Copenhagen, Denmark"
+  url: null
+  notes:
+
+- venue: "Dept. of Biomedical Research, University of Bern"
+  kind: "institutional-seminar"
+  title: "Life in words and pictures: Sequencing and imaging for analysing microbial communities"
+  date: "2017-11"
+  location: "Bern, Switzerland"
+  url: null
+  notes:
+
+- venue: "Autumn School: Machine Learning applied to Systems Biology"
+  kind: "summer-school-lecture"
+  title: "Applications of machine learning in systems biology"
+  date: "2017-11-22"
+  location: "Schwarzenberg, Switzerland"
+  url: "http://www.sib.swiss/training/upcoming-training-events/2017-11-autumn-school"
+
+- venue: "University of Bern"
+  kind: "invited-talk"
+  title: "Computational approaches to microbiome research"
+  date: "2017-11-24"
+  location: "Bern, Switzerland"
+  url: "https://www.unibe.ch/"
+
+- venue: "PASIC 2018"
+  kind: "invited-talk"
+  title: "Single-cell approaches in microbiome research"
+  date: "2018-10-04"
+  location: "Paris, France"
+  url: "https://pasic-2018.sciencesconf.org/"
+  title: "High-throughput fluorescence microscopy of environmental samples obtains single-cell phenotypic measurements"
+
+- venue: "Danone"
+  kind: "invited-talk"
+  title: "The Microbiome of Planet Earth"
+  location: "Paris, France"
+  date: "2018-10-05"
+
+- venue: "Lisbon Machine Learning Summer School (LxMLS)"
+  kind: "summer-school-lecture"
+  title: "Introduction to Python"
+  date: "2018-06-14"
+  location: "Lisbon, Portugal"
+  url: "https://lxmls.it.pt/2018/"
+
+- venue: "Symposium on Computational Biology, Fudan University"
+  kind: "invited-talk"
+  title: "Metagenomics-based investigations of microbial communities"
+  date: "2018-08"
+  location: "Shanghai, China"
+  url: null
+  notes:
+
+- venue: "BOSC 2019"
+  kind: "from-abstract"
+  title: "NGLess (metagenome processing tool)"
+  date: "2019-07-25"
+  location: "Basel, Switzerland"
+  url: null
+
+- venue: "International Conference on One Health Antimicrobial Resistance (ICOHAR)"
+  kind: "invited-talk"
+  title: "The use of animal models for assessing antimicrobial impact on the gut microbiome"
+  date: "2019-04-16"
+  location: "Utrecht, Netherlands"
+  url: "http://www.icohar2019.org/icohar2019.html"
+
+- venue: "USYD - Fudan Brain and Intelligence Science Alliance Workshop"
+  location: "Sydney, Australia"
+  date: "2019-11-27"
+  kind: "invited-talk"
+  title: "The Microbiome of Planet Earth"
+
+- venue: "Tweag"
+  kind: "institutional-seminar-remote"
+  title: "Free Reproducibility"
+  date: "2020-03-26"
+  location: "Paris, France (remote)"
+  url: "https://www.tweag.io/"
+
+- venue: "Mikhail Gelfand group seminar"
+  kind: "institutional-seminar-remote"
+  title: "The Microbiome of Planet Earth"
+  note: "Gelfand talk"
+  date: "2020-09-15"
+
+- venue: "International Symposium organized by the Students of the Graduate School of Life Sciences"
+  kind: "invited-talk-remote"
+  title: "The global microbiome seen through metagenomics"
+  date: "2020-10-29"
+  location: "Wurtzburg, Germany (remote)"
+  url: "https://www.graduateschools.uni-wuerzburg.de/student-symposium/symposium-2020/invited-speakers/"
+
+- venue: "ABABSC 2020"
+  kind: "from-abstract-remote"
+  title: "The AMPSphere: antimicrobial peptides (AMPs) in the global microbiome"
+  date: "2020-11-24"
+  location: "Online"
+  url: "https://www.abacbs.org/program-1"
+
+- venue: "Institut Pasteur Shanghai"
+  kind: "institutional-seminar"
+  title: "Microbes and antimicrobes at the global scale"
+  date: "2020-12-09"
+  location: "Shanghai, China"
+  url: null
+
+- venue: "Lisbon Machine Learning School (LxMLS)"
+  kind: "summer-school-lecture"
+  title: "Machine learning methods and applications"
+  date: "2021-07-xx"
+  location: "Lisbon, Portugal"
+  url: "https://lxmls.it.pt/2021/"
+
+- venue: "Joint Genome Institute (JGI)"
+  kind: "institutional-seminar-remote"
+  title: null
+  date: "2022-03-09"
+  location: "Berkeley, USA (remote)"
+  url: null
+  talk-url: null
+
+- venue: "Luxembourg Institute of Health"
+  kind: "institutional-seminar"
+  title: null
+  date: "2022-03-21"
+  location: "Esch, Luxembourg"
+  url: null
+  talk-url: null
+
+- venue: "University of Innsbruck"
+  kind: "institutional-seminar-remote"
+  title: "Big and small genes of the global microbiome"
+  date: "2022-03-24"
+  location: "Innsbruck, Austria (remote)"
+  url: "https://www.uibk.ac.at/de/microbiology/seminar/2022/0324-coelho/"
+
+- venue: "Keystone Symposium on Microproteins"
+  kind: "invited-talk"
+  title: "Microproteins of the global microbiome"
+  date: "2022-04-08"
+  location: "Salt Lake City, USA"
+  url: null
+  talk-url: "https://2022-04-08-lpc-ks.netlify.app/"
+
+- venue: "NNF Prize Symposium 2022"
+  kind: "invited-talk"
+  title: "Exploring the microbiome at a global scale: (GMGC & SemiBin)"
+  talk-url: "https://2022-06-09-lpc-nnf.netlify.app/"
+  date: "2022-06-09"
+  location: "Copenhagen, Denmark"
+  url: null
+
+- venue: "Quest for Orthologs (ECCB 2022)"
+  kind: "invited-talk"
+  title: "Quest for Orthologs workshop talk"
+  date: "2022-09-18"
+  location: "Sitges, Spain"
+  url: null
+
+- venue: "GOTBIN network"
+  location: "Gothenburg, Sweden"
+  kind: "institutional-seminar"
+  date: "2022-09-xx"
+  title: null
+  url: null
+
+- venue: "OLS (Open Life Science)"
+  location: "OLS6 cohort"
+  kind: "invited-talk-remote"
+  date: "2022-08-25"
+  title: "Open source software in science"
+  url: "https://2022-10-25-lpc-oss.netlify.app/"
+
+- venue: "Faculty of Mathematics University of Belgrade and the Serbian Society for Bioinformatics and Computational Biology"
+  kind: "institutional-seminar-remote"
+  location: "Belgrade, Serbia (remote)"
+  date: "2023-02-xx"
+  title: "SemiBin: using self-supervised deep learning for better metagenomics binning"
+  url: null
+  talk-url: null
+  notes:
+
+- venue: "INRAE"
+  kind: "institutional-seminar"
+  location: "Paris, France"
+  date: "2023-04"
+  title: "The global microbiome. Big data & small genes"
+  talk-url: null
+
+
+- venue: "Nanjing Agricultural University"
+  kind: "institutional-seminar"
+  location: "Nanjing, China"
+  date: "2023-04"
+  title: "The global microbiome. Big data & small genes"
+  talk-url: null
+
+
+
+- venue: "microProteins 2023"
+  kind: "from-abstract"
+  title: "TODO"
+  date: "2023-05-31"
+  location: "Copenhagen, Denmark"
+  url: "https://plen.ku.dk/english/calendar/2022/microproteins-2023-unraveling-the-universe-of-microproteins---from-discovery-to-physiology-and-application/"
+
+- venue: "ISMB/ECCB 2023"
+  kind: "from-abstract"
+  note: "Proceedings paper presentation (MICROBIOME track)"
+  title: "SemiBin2: self-supervised learning leads to better MAGs for short- and long-reads"
+  date: "2023-07-25"
+  location: "Lyon, France"
+  url: "https://2023-07-25-talk-semibin.big-data-biology.org"
+
+- venue: "Earlham Institute Seminar"
+  kind: "institutional-seminar"
+  title: "The global microbiome. Big data & small genes"
+  date: "2023-08-23"
+  location: "Norwich, United Kingdom"
+  url: null
+  talk-url: "https://2023-08-23-lpc-ei.netlify.app/"
+
+- venue: "International Peptide Symposium 2023"
+  kind: "from-abstract"
+  title: "A survey of antimicrobial peptides from the global microbiome"
+  date: "2023-10-16"
+  location: "Brisbane, Australia"
+  url: "https://www.peptides2023.org/"
+  talk-url: "https://2023-10-16-lpc-peptides.big-data-biology.org/"
+
+- venue: "InCoB 2023"
+  kind: "from-abstract"
+  note: "Highlights track"
+  title: "SemiBin2: self-supervised learning leads to better MAGs for short- and long-reads"
+  date: "2023-11-12"
+  location: "Brisbane, Australia"
+  url: "https://incob.apbionet.org/incob23/"
+  talk-url: "https://2023-11-12-lpc-semibin-talk.big-data-biology.org/"
+
+- venue: "InCoB 2023"
+  kind: "invited-talk"
+  title: "Big data and small genes: analysing the global microbiome with computers"
+  note: "A second talk at InCoB 2023"
+  date: "2023-11-14"
+  location: "Brisbane, Australia"
+  url: null
+  talk-url: "https://2023-11-14-lpc-talk.big-data-biology.org/"
+
+- venue: "ASM Microbiology 2024"
+  kind: "invited-talk"
+  title: "Small proteins of the global microbiome with a focus on antimicrobial peptides"
+  date: "2024-07-04"
+  location: "Brisbane, Australia"
+  url: "https://asmicro-2024.p.asnevents.com.au/days/2024-07-04/abstract/104449"
+  talk-url: "https://2024-07-04-lpc-talk.big-data-biology.org/"
+
+
+- venue: "ISMB/ECCB 2024 (MICROBIOME track)"
+  kind: "from-abstract"
+  title: "Understanding the small proteins from the global microbiome"
+  date: "2024-07-14"
+  location: "Montreal, Canada"
+  talk-url: "https://2024-07-14-lpc-talk.big-data-biology.org/"
+  url: null
+
+- venue: "ISMB 2024"
+  kind: "from-abstract"
+  title: "Long-term sustainable research software"
+  date: "2024-07-16"
+  location: "Montreal, Canada"
+  url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011920"
+  talk-url: "https://2024-07-16-lpc-talk.big-data-biology.org/"
+
+- venue: "Joint Genome Institute (JGI)"
+  kind: "institutional-seminar"
+  title: "The global microbiome. Big data & small genes"
+  date: "2024-07-22"
+  location: "Berkeley, USA"
+  url: null
+  talk-url: "https://2024-07-22-lpc-talk.big-data-biology.org/"
+
+- venue: "ISME19 – Night of the Microbes"
+  kind: "public-engagement"
+  title: "The human microbiome & climate change"
+  date: "2024-08-21"
+  location: "Cape Town, South Africa"
+  url: "https://www.sun.ac.za/english/Lists/Events/DispForm.aspx?ID=5882"
+  talk-url: "https://2024-08-21-lpc-talk.netlify.app/"
+
+- venue: "Monash Biomedicine Discovery Institute"
+  kind: "institutional-seminar"
+  title: "The global microbiome. Big data & small genes"
+  date: "2024-09-09"
+  location: "Melbourne, Australia"
+  url: "https://www.monash.edu/"
+  talk-url: "https://2024-09-09-lpc-talk.big-data-biology.org/"
+
+- venue: "Makerere University, Kampala"
+  kind: "institutional-seminar-remote"
+  title: "A catalog of small proteins from the global microbiome"
+  date: "2024-09-21"
+  location: "Kampala, Uganda"
+  url: "https://www.mak.ac.ug/"
+  talk-url: "https://2024-09-21-lpc-talk.big-data-biology.org/"
+
+- venue: "APBioNETTalks Webinar"
+  kind: "webinar"
+  title: "Finding Antimicrobial peptides in the global microbiome using machine learning"
+  date: "2024-09-24"
+  location: "Online"
+  url: "https://apbtalks.apbionet.org/event/finding-antimicrobial-peptides-in-the-global-microbiome-using-machine-learning/"
+  talk-url: "https://2024-09-24-lpc-talk.big-data-biology.org/"
+
+- venue: "EMBARK Final Results Webinar"
+  kind: "webinar"
+  location: "remote"
+  date: "2024-10-15"
+  title: "Database and method biases affecting ARG analysis"
+  talk-url: "https://2024-10-15-lpc-talk.netlify.app/"
+
+- venue: "EMBL/China Alumni Meeting"
+  kind: "invited-talk"
+  location: "Shanghai, China"
+  date: "2024-10-18"
+  title: "The global microbiome. Big data & small genes"
+  talk-url: "https://2024-10-18-lpc-talk.netlify.app/"
+
+- venue: "Nanjing Agricultural University"
+  kind: "institutional-seminar"
+  location: "Nanjing, China"
+  date: "2024-10-20"
+  title: "Antimicrobial peptides and other small proteins of the global microbiome"
+  talk-url: "https://2024-10-20-lpc-talk.netlify.app/"
+
+- venue: "Fudan University Pudong Medical Center"
+  kind: "institutional-seminar"
+  location: "Shanghai, China"
+  date: "2024-10-23"
+  title: null
+  talk-url: null
+
+- venue: "MIG Symposium: Cutting edge methods in emerging technologies"
+  kind: "invited-talk"
+  title: "The global microbiome. Big data & small genes"
+  date: "2024-12-06"
+  location: "Melbourne, Australia"
+  url: "https://events.unimelb.edu.au/MIG/event/43947-mig-symposium-cutting-edge-methods-in-emerging"
+  talk-url: "https://2024-12-06-lpc-talk.big-data-biology.org/"
+
+- venue: "Symposium on Bioinformatics Excellence and Innovation (ABACBS 2024)"
+  kind: "invited-talk"
+  title: "How we develop sustainable software tools in an academic settings"
+  date: "2024-11-04"
+  location: "Sydney, Australia"
+  url: "https://www.abacbs.org/conference2024/home"
+  talk-url: "https://2024-11-04-lpc-talk.big-data-biology.org/"
+
+- venue: "University of Namur"
+  kind: "institutional-seminar-remote"
+  title: "The global microbiome. Big data & small genes"
+  date: "2024-11-22"
+  location: "Namur, Belgium (remote)"
+  url: "https://www.unamur.be/en"
+  talk-url: "https://2024-11-22-lpc-talk.big-data-biology.org/"
+
+- venue: "CIPPS Symposium"
+  kind: "summer-school-lecture"
+  title: "Promises and pitfalls of AI in researching peptides and small proteins"
+  date: "2024-11-28"
+  location: "Sydney, Australia"
+  url: null
+  talk-url: "https://2024-11-28-lpc-ai.big-data-biology.org"
+  note: "Delivered on white board"
+
+- venue: "Pakistan Society for Microbiology Conference"
+  kind: "invited-talk"
+  title: "Microbiology and antimicrobial resistance"
+  date: "2025-04-15"
+  location: "Pakistan (remote)"
+  note: "Was intended to be in-person but delivered remotely"
+  url: "https://qau.edu.pk/events/15th-biennial-conference-organized-by-the-pakistan-society-for-microbiology/"
+  talk-url: "https://2025-04-15-lpc-talk.big-data-biology.org"
+
+- venue: "Hebrew University of Jerusalem"
+  kind: "institutional-seminar-remote"
+  title: "Big data and small genes"
+  date: "2025-06-05"
+  location: "Jerusalem, Israel (remote)"
+  url: "https://en.hafakulta.agri.huji.ac.il/node/3198406/field_date/default/addtocal.ics"
+  talk-url: "https://2025-06-05-lpc-talk.big-data-biology.org"
+
+- venue: "Frazer Institute"
+  kind: "institutional-seminar"
+  title: "Big Data & Small Genes in the Global Microbiome"
+  date: "2025-06-17"
+  location: "Brisbane, Australia"
+  url: null
+  talk-url: "https://2025-06-17-lpc-talk.big-data-biology.org"
+
+- venue: "Basecamp Research"
+  kind: "institutional-seminar"
+  title: "Big Data & Small Genes in the Global Microbiome"
+  date: "2025-07-16"
+  location: "London, United Kingdom"
+  talk-url: "https://2025-07-16-lpc-talk.big-data-biology.org/"
+
+
+- venue: "Imperial College London"
+  kind: "institutional-seminar"
+  title: "Big Data & Small Genes in the Global Microbiome"
+  date: "2025-07-17"
+  location: "London, United Kingdom"
+  url: null
+  talk-url: "https://2025-07-17-lpc-talk.big-data-biology.org/"
+
+- venue: "King's College London"
+  kind: "institutional-seminar"
+  title: "Big Data & Small Genes in the Global Microbiome"
+  date: "2025-07-18"
+  location: "London, United Kingdom"
+  talk-url: "https://2025-07-18-lpc-talk.big-data-biology.org/"
+
+
+- venue: "ISMB/ECCB 2025"
+  kind: "from-abstract"
+  title: "Long-reads metagenome-assembled genomes can be higher quality than reference genomes: the case of the Shanghai pet dog microbiome catalog"
+  date: "2025-07-24"
+  location: "Liverpool, United Kingdom"
+  url: "https://www.iscb.org/ismbeccb2025"
+  talk-url: "https://2025-07-24-lpc-talk.big-data-biology.org"
+
+- venue: "University of Warwick"
+  kind: "institutional-seminar"
+  title: "Big Data & Small Genes in the Global Microbiome"
+  date: "2025-07-25"
+  location: "Coventry, United Kingdom"
+  url: "https://warwick.ac.uk/"
+  talk-url: "https://2025-07-25-lpc-talk.big-data-biology.org"
+
+- venue: "Decoding Microproteins Across Evolution and Disease (GRC)"
+  kind: "invited-talk"
+  title: "Decoding the microproteins of the global microbiome with machine learning and gene synteny"
+  date: "2025-08-17"
+  location: "Barcelona, Spain"
+  url: "https://www.grc.org/decoding-microproteins-across-evolution-and-disease-conference/2025/"
+  talk-url: "https://2025-08-17-lpc-talk.big-data-biology.org"
+
+- venue: "IATA"
+  kind: "institutional-seminar"
+  date: "2025-08-25"
+  location: "Valencia, Spain"
+  talk-url: "https://2025-08-25-lpc-talk.netlify.app"
+
+- venue: "UC Cork"
+  kind: "institutional-seminar"
+  date: "2025-09-04"
+  location: "Cork, Ireland"
+  talk-url: "https://2025-09-04-lpc-talk.big-data-biology.org"
+
+
+- venue: "GloMiNe 'Preservation of microbial diversity”'by Microbiota Vault and MVIF Microbiome Virtual International Forum"
+  kind: "webinar"
+  title: "Cataloging the global microbiome. Very big data for very small things"
+  date: "2025-09-09"
+  url: "https://cassyni.com/events/7WPKi4Vz8iR4tAVMB9kqJm"
+  talk-url: "https://2025-09-09-lpc-talk.big-data-biology.org"
+
+- venue: "EMBL Human Microbiome Symposium"
+  kind: "invited-talk"
+  title: "Small proteins of the human microbiome and beyond"
+  date: "2025-09-17"
+  location: "Heidelberg, Germany"
+  url: "https://www.embl.org/about/info/course-and-conference-office/events/ees25-08/"
+  talk-url: "https://2025-09-17-lpc-talk.big-data-biology.org"
+
+
+- venue: "SMBE Satellite Meeting: Evolutionary Biochemistry of Insect Antimicrobial Peptides"
+  kind: "invited-talk"
+  title: "The global microbiome as a source of antimicrobial peptides"
+  date: "2025-10-14"
+  location: "Houston, USA"
+  url: "https://uh.edu/nsm/biology-biochemistry/news-events/smbe-meeting/"
+  talk-url: "https://2025-10-14-lpc-talk.big-data-biology.org"
+
+- venue: "Queensland Immunology Networking Symposium"
+  kind: "invited-talk"
+  title: "The potential of the global microbiome as a source of novel antibiotics"
+  date: "2025-10-23"
+  location: "Queensland, Australia"
+  url: "https://www.qirc.com.au/qins25"
+  talk-url: "https://2025-10-23-lpc-talk.big-data-biology.org"
+
+
+- venue: "DTMBIO"
+  kind: "keynote"
+  title: "Big data and small genes. Studying small proteins from the global microbiome"
+  date: "2025-12-16"
+  location: "Muju, South Korea"
+  url: "https://dtmbio.net/"
+  talk-url: "https://2025-12-16-lpc-talk.big-data-biology.org/"
+
+- venue: "BRISJAMS"
+  kind: "public-engagement"
+  title: "AI and big data in microbiology: the hype, the promise, and the disappointments"
+  date: "2026-02-25"
+  location: "Brisbane, Australia"
+
+- venue: "SparqEd"
+  kind: "public-engagement"
+  title: "Exploring the invisible world: my journey through computational biology"
+  date: "2026-03-24"
+  location: "Brisbane, Australia"
+
+- venue: "Sociedade Brasileira de Bioquímica e Biologia Molecular (SBBq)"
+  kind: "invited-talk"
+  title: "Big data and small genes. Studying small proteins from the global microbiome"
+  date: "2026-05-18"
+  location: "Águas de Lindoia, Brazil"
+
+- venue: "Universidade de São Paulo (USP)"
+  kind: "institutional-seminar"
+  title: "Big data and small genes. Studying small proteins from the global microbiome"
+  date: "2026-05-21"
+  location: "São Paulo, Brazil"
+
+- venue: "Centro Nacional de Pesquisa em Energia e Materiais (CNPEM)"
+  kind: "institutional-seminar"
+  title: "Big data and small genes. Studying small proteins from the global microbiome"
+  date: "2026-05-22"
+  location: "Campinas, Brazil"
+
+- venue: "Oxford Nanopore User Group Meeting"
+  kind: "invited-talk"
+  title: "Better than reference genomes from mixed communities: case studies on pet dog and urban soil microbiomes"
+  date: "2026-05-28"
+  location: "Brisbane, Australia"
+
+
+- venue: "ISME20 – MS07/AS07"
+  kind: "convenor"
+  title: "AI-based tools to predict key microbiome traits"
+  date: "2026-08-17"
+  location: "Auckland, New Zealand"
+
+- venue: "20th International Symposium on Microbial Ecology (ISME20)"
+  kind: "invited-talk"
+  title: "AI for understanding small proteins and peptides from the global microbiome"
+  date: "2026-08-17"
+  location: "Auckland, New Zealand"
+
+- venue: "ISME20 – Panel Discussion"
+  kind: "panel"
+  title: "AI in scientific publishing - editorial, publisher, author, and early career perspectives"
+  date: "2026-08-17"
+  location: "Auckland, New Zealand"
+
+- venue: "ISME20 – Round Table RT01"
+  kind: "panel"
+  title: "AI in microbiome science: hype or reality?"
+  date: "2026-08-17"
+  location: "Auckland, New Zealand"
+
+- venue: "AusBiotech QLD BioBriefing (hosted by QUT School of Biomedical Sciences & Davies Collison Cave)"
+  kind: "public-engagement"
+  title: "AI and Quantum Technologies in Biotech Discovery and Translation"
+  date: "2026-08-26"
+  location: "Brisbane, Australia"
+  url: "https://www.ausbiotech.org/ABT/iCore/Events/Event_display.aspx?EventKey=2608QLDBB"
