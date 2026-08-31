@@ -1,5 +1,3 @@
-import datetime
-
 import numpy as np
 import pandas as pd
 from matplotlib import style
@@ -34,73 +32,6 @@ MUTED = '#666666'
 # enlarge without rebuilding vita.pdf.
 FIG_SIZE = (6.5, 2.2)
 
-# The final year is partial. This is the date the counts below were collected;
-# it drives both the position of the last point and the note on the figure.
-# Update it whenever the counts are updated.
-DATA_THROUGH = datetime.date(2026, 8, 31)
-
-FIRST_YEAR = 2011
-
-# Citations accrued in each year, starting at FIRST_YEAR.
-gscholar_citations = np.array([
-      43,
-      50,
-      61,
-     126,
-     266,
-     532,
-     634,
-     931,
-    1510,
-    2210,
-    2945,
-    3313,
-    3271,
-    3544,
-    4278,
-    3285,
-    ])
-
-wos_citations = np.array([
-     #  1, # 2007
-     #  0, # 2008
-     #  3, # 2009
-     #  4, # 2010
-      19, # 2011
-      21,
-      24,
-      52,
-     124,
-     242,
-     307,
-     495,
-     915,
-    1309,
-    1927,
-    2164,
-    2047,
-    2355,
-    2878,
-    2012,
-    ])
-
-years = np.arange(FIRST_YEAR, FIRST_YEAR + len(gscholar_citations))
-last_year = years[-1]
-months_done = DATA_THROUGH.month
-
-if len(wos_citations) != len(gscholar_citations):
-    raise ValueError('Google Scholar and Web of Science series have different lengths')
-if last_year != DATA_THROUGH.year:
-    raise ValueError(f'DATA_THROUGH is {DATA_THROUGH.year}, but the counts end in {last_year}')
-
-# Each yearly total is plotted at the end of the window it covers, so the
-# partial final year sits where its data actually stops.
-year_ends = years + 1.0
-year_ends[-1] = last_year + months_done/12
-
-cumulative_gscholar = np.cumsum(gscholar_citations)
-cumulative_wos = np.cumsum(wos_citations)
-
 months = {
  'Jan': 1,
  'Feb': 2,
@@ -115,6 +46,35 @@ months = {
  'Nov': 11,
  'Dec': 12,
  }
+month_names = {n: name for name, n in months.items()}
+
+# Citations accrued per year. The Months column is how much of each year the
+# counts cover, which is 12 except for the year still in progress.
+citation_data = pd.read_csv('citations.csv', comment='#')
+
+years = citation_data['Year'].values
+gscholar_citations = citation_data['Google'].values
+wos_citations = citation_data['WoS'].values
+months_counted = citation_data['Months'].values
+
+first_year = years[0]
+last_year = years[-1]
+months_done = months_counted[-1]
+
+if not (np.diff(years) == 1).all():
+    raise ValueError('citations.csv skips a year')
+if not (months_counted[:-1] == 12).all():
+    raise ValueError('only the final year in citations.csv may be partial')
+if not 1 <= months_done <= 12:
+    raise ValueError(f'Months for {last_year} is {months_done}, not 1-12')
+
+# Each yearly total is plotted at the end of the window it covers, so the
+# partial final year sits where its data actually stops.
+year_ends = years + 1.0
+year_ends[-1] = last_year + months_done/12
+
+cumulative_gscholar = np.cumsum(gscholar_citations)
+cumulative_wos = np.cumsum(wos_citations)
 
 h_index_data = pd.read_table('h-index.csv', sep=',')
 h_index_data.columns = ['Year', 'Mon', 'Google', 'WoS']
@@ -127,8 +87,8 @@ h_index_data['Year_frac'] = h_index_data.apply(
 h_google = h_index_data.drop_duplicates(subset='Google')
 h_wos = h_index_data.dropna(subset=['WoS']).drop_duplicates(subset='WoS')
 
-X_LIM = (FIRST_YEAR + 0.6, last_year + 1.9)
-X_TICKS = np.arange(FIRST_YEAR + 1, last_year + 1, 2)
+X_LIM = (first_year + 0.6, last_year + 1.9)
+X_TICKS = np.arange(first_year + 1, last_year + 1, 2)
 
 
 def style_x_axis(ax):
@@ -161,7 +121,7 @@ style_x_axis(cit_ax)
 cit_ax.yaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
 cit_ax.set_ylabel('Citations (cumulative)')
 cit_ax.text(0.985, 0.03,
-            f'final year through {DATA_THROUGH:%b %Y}',
+            f'final year through {month_names[months_done]} {last_year}',
             transform=cit_ax.transAxes,
             ha='right', va='bottom', fontsize=5.5, color=MUTED)
 
@@ -174,12 +134,12 @@ projected = gscholar_citations[-1] * 12/months_done
 rate_ax.bar(last_year, projected - gscholar_citations[-1], width=0.7,
             bottom=gscholar_citations[-1], color='none', edgecolor=GOOGLE,
             lw=0.5, linestyle=(0, (1.2, 1.2)), zorder=3)
-rate_ax.set_xlim(FIRST_YEAR - 0.8, last_year + 0.8)
+rate_ax.set_xlim(first_year - 0.8, last_year + 0.8)
 rate_ax.set_ylim(0, projected*1.14)
 rate_ax.set_yticks([0, 4000])
 rate_ax.set_yticklabels(['0', '4k'], fontsize=5.5)
-rate_ax.set_xticks([FIRST_YEAR + 1, last_year])
-rate_ax.set_xticklabels([str(FIRST_YEAR + 1), str(last_year)], fontsize=5.5)
+rate_ax.set_xticks([first_year + 1, last_year])
+rate_ax.set_xticklabels([str(first_year + 1), str(last_year)], fontsize=5.5)
 rate_ax.tick_params(length=1.5, width=0.5, pad=1)
 rate_ax.set_title('per year (GS)', fontsize=6, color=MUTED, pad=1.5)
 for spine in rate_ax.spines.values():

@@ -1,0 +1,28 @@
+# Citations accrued in each year, as reported by Google Scholar and Web of
+# Science. Months is how much of the year the counts cover: 12 for a complete
+# year, less for the current one. Update the final row (and add a new one each
+# January) whenever the numbers are refreshed.
+#
+# Web of Science also reports these pre-2011 citations. They have never been
+# plotted; uncommenting them raises the Web of Science total by 8.
+# 2007,12,,1
+# 2008,12,,0
+# 2009,12,,3
+# 2010,12,,4
+Year,Months,Google,WoS
+2011,12,43,19
+2012,12,50,21
+2013,12,61,24
+2014,12,126,52
+2015,12,266,124
+2016,12,532,242
+2017,12,634,307
+2018,12,931,495
+2019,12,1510,915
+2020,12,2210,1309
+2021,12,2945,1927
+2022,12,3313,2164
+2023,12,3271,2047
+2024,12,3544,2355
+2025,12,4278,2878
+2026,8,3285,2012
