@@ -29,9 +29,10 @@ WOS = '#7570b3'
 MUTED = '#666666'
 
 # The figure is placed full-width on page 2 of the CV, which is exactly full:
-# anything above 1.88in pushes "Language skills" onto its own page and the CV
-# grows from 12 to 13 pages. Do not enlarge without rebuilding vita.pdf.
-FIG_SIZE = (6.5, 1.8)
+# 2.06in is the tallest that still fits, and at 2.08in "Language skills" is
+# pushed onto its own page and the CV grows from 12 to 13 pages. Do not
+# enlarge without rebuilding vita.pdf.
+FIG_SIZE = (6.5, 2.0)
 
 # The final year is partial. This is the date the counts below were collected;
 # it drives both the position of the last point and the note on the figure.
