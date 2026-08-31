@@ -34,18 +34,29 @@
     BoldItalicFont={Linux Libertine O Bold Italic},
 ]{Linux Libertine O:mapping=tex-text}
 
+% Headings are plain font switches, so hyperref generates no bookmarks on its
+% own: each heading explicitly emits one (\cvbookmark) at the matching level.
+\newcounter{cvbookmark}
+\newcommand\cvbookmark[2]{%
+    \stepcounter{cvbookmark}%
+    \phantomsection%
+    \pdfbookmark[#1]{#2}{cvsec.\thecvbookmark}%
+}
 \renewcommand\section[1]{%
     \par\vspace{1.4em}\penalty-100%
+    \cvbookmark{1}{#1}%
     {\subhead #1}%
     \par\penalty100\vspace{0.1em}\penalty100%
 }
 \renewcommand\subsection[1]{%
     \par\vspace{.1em}%
+    \cvbookmark{2}{#1}%
     {\hspace{0em}\subsubhead #1}%
     \par\vspace{.4em}%
 }
 \renewcommand\subsubsection[1]{%
     \par\vspace{.1em}%
+    \cvbookmark{3}{#1}%
     {\hspace{1em}\subsubsubhead #1}%
     \par\vspace{.2em}%
 }
@@ -67,13 +78,36 @@
 \newcommand\costar{${}^{*}$}
 \newcommand\cosenior{${}^{\dagger}$}
 
-\usepackage[margin=1in]{geometry}
-\usepackage[xetex,bookmarks,colorlinks,breaklinks]{hyperref}
+\usepackage[margin=1in,headheight=14pt,headsep=14pt]{geometry}
+\usepackage[xetex,bookmarks,bookmarksopen,colorlinks,breaklinks]{hyperref}
+\hypersetup{
+    pdftitle={Luis Pedro Coelho --- Curriculum Vit\ae},
+    pdfauthor={Luis Pedro Coelho},
+    pdfsubject={Curriculum Vitae},
+    pdfkeywords={curriculum vitae, bioinformatics, computational biology, microbiome, research software},
+    pdfcreator={XeLaTeX},
+}
+
+% Running header: name on the left, page number on the right, so a printed copy
+% stays identifiable if the pages get separated.
+\makeatletter
+\newcommand\ps@cv{%
+    \renewcommand\@oddhead{%
+        {\CvItem\textcolor{medg}{Luis Pedro Coelho --- Curriculum Vit\ae}%
+         \hfill
+         \textcolor{medg}{Page \thepage}}%
+    }%
+    \let\@evenhead\@oddhead
+    \renewcommand\@oddfoot{}%
+    \let\@evenfoot\@oddfoot
+}
+\makeatother
 
 \usepackage{enumitem}
 \renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"F6B9}}}
-\pagestyle{empty}
+\pagestyle{cv}
 \begin{document}
+\thispagestyle{empty}% page 1 carries the full name block already
 
 \parindent=0cm
 
