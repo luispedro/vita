@@ -1,28 +1,35 @@
 # Citations accrued in each year, as reported by Google Scholar and Web of
 # Science. Months is how much of the year the counts cover: 12 for a complete
-# year, less for the current one. Update the final row (and add a new one each
-# January) whenever the numbers are refreshed.
+# year, less for the year still in progress. Update the final row (and add a
+# new one each January) whenever the numbers are refreshed.
 #
-# Web of Science also reports these pre-2011 citations. They have never been
-# plotted; uncommenting them raises the Web of Science total by 8.
-# 2007,12,,1
-# 2008,12,,0
-# 2009,12,,3
-# 2010,12,,4
+# Google Scholar reports no per-year breakdown before 2014. The 2013 Google
+# value is therefore its total for 2013 and everything earlier, not for 2013
+# alone. That is exact rather than approximate: the per-year counts from 2014
+# on, plus this residual, come to the 27,391 total Scholar reports.
+#
+# The plot starts at PLOT_FROM and folds every earlier row into its starting
+# point, so the mixed meaning of that one cell never reaches the figure. A
+# guard in citations.py enforces that.
 Year,Months,Google,WoS
-2011,12,43,19
-2012,12,50,21
-2013,12,61,24
-2014,12,126,52
-2015,12,266,124
-2016,12,532,242
-2017,12,634,307
-2018,12,931,495
+2006,12,,0
+2007,12,,1
+2008,12,,0
+2009,12,,3
+2010,12,,4
+2011,12,,19
+2012,12,,21
+2013,12,491,24
+2014,12,123,52
+2015,12,266,123
+2016,12,528,242
+2017,12,628,307
+2018,12,944,495
 2019,12,1510,915
-2020,12,2210,1309
-2021,12,2945,1927
-2022,12,3313,2164
-2023,12,3271,2047
-2024,12,3544,2355
-2025,12,4278,2878
-2026,8,3285,2012
+2020,12,2224,1309
+2021,12,2956,1926
+2022,12,3306,2164
+2023,12,3261,2046
+2024,12,3546,2355
+2025,12,4240,2879
+2026,8,3368,2069
