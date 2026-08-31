@@ -8,7 +8,6 @@
 \definecolor{medg}{HTML}{666666}
 \definecolor{darkg}{HTML}{333333}
 
-\usepackage{wrapfig}
 %FONTS
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
@@ -18,13 +17,11 @@
 \font\subhead="TeX Gyre Heros Bold:mapping=tex-text" at 13pt
 \font\subsubhead="Gentium Book Basic:mapping=tex-text" at 13pt
 \font\subsubsubhead="Gentium Book Basic:mapping=tex-text" at 11pt
-\font\Quote="Linux Libertine O Bold Italic:mapping=tex-text" at 16pt
 \font\Contact="Linux Libertine O" at 9pt
 \newfontfamily\Text{Linux Libertine O}[
         BoldFont={Linux Libertine O Semibold},
         ItalicFont={Linux Libertine O Italic}]
 
-\font\Textit="Linux Libertine O/I:+onum" at 10pt
 \font\HighlightFont="Linux Libertine O/I:+onum" at 10pt
 \font\CvItem="TeX Gyre Heros:mapping=tex-text" at 9pt
 \font\Date="TeX Gyre Heros Bold:mapping=tex-text" at 9pt
@@ -67,10 +64,9 @@
     \par%
 }
 \newcommand\showdoi[1]{%
-    \href{http://dx.doi.org/#1}{[DOI]}%
+    \href{https://doi.org/#1}{[DOI]}%
 }
 
-\newcommand\ignore[1]{\relax}
 \newcommand\pubname[1]{\textsc{\uline{#1}}}
 %\newcommand\contribution[1]{\relax\hfill\break\textbf{My contribution}: \textit{#1}}
 \newcommand\contribution[1]{\relax}
@@ -79,7 +75,7 @@
 \newcommand\cosenior{${}^{\dagger}$}
 
 \usepackage[margin=1in,headheight=14pt,headsep=14pt]{geometry}
-\usepackage[xetex,bookmarks,bookmarksopen,colorlinks,breaklinks]{hyperref}
+\usepackage[bookmarks,bookmarksopen,colorlinks,breaklinks]{hyperref}
 \hypersetup{
     pdftitle={Luis Pedro Coelho --- Curriculum Vit\ae},
     pdfauthor={Luis Pedro Coelho},

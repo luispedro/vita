@@ -30,8 +30,7 @@
             polyglossia
             euenc
             xunicode
-            enumitem
-            wrapfig;
+            enumitem;
         };
 
       localFonts = system:
