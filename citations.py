@@ -29,10 +29,10 @@ WOS = '#7570b3'
 MUTED = '#666666'
 
 # The figure is placed full-width on page 2 of the CV, which is exactly full:
-# 2.06in is the tallest that still fits, and at 2.08in "Language skills" is
+# 2.24in is the tallest that still fits, and at 2.26in "Language skills" is
 # pushed onto its own page and the CV grows from 12 to 13 pages. Do not
 # enlarge without rebuilding vita.pdf.
-FIG_SIZE = (6.5, 2.0)
+FIG_SIZE = (6.5, 2.2)
 
 # The final year is partial. This is the date the counts below were collected;
 # it drives both the position of the last point and the note on the figure.
@@ -197,10 +197,11 @@ label_end(h_ax, h_wos.Year_frac.iloc[-1], h_wos.WoS.iloc[-1], WOS, -1)
 style_x_axis(h_ax)
 h_ax.set_ylabel('h-index')
 
-# One legend for both panels, in the corner the h-index steps leave empty.
+# One legend for both panels, inside the corner the h-index steps leave empty.
+# borderaxespad keeps it clear of the y-axis instead of straddling it.
 h_ax.legend(loc='upper left', frameon=False, fontsize=6.5, handlelength=1.2,
-            handletextpad=0.45, borderpad=0.1, labelspacing=0.25,
-            bbox_to_anchor=(-0.02, 1.06))
+            handletextpad=0.45, borderpad=0.0, labelspacing=0.3,
+            borderaxespad=0.6)
 
 sns.despine(fig, ax=cit_ax)
 sns.despine(fig, ax=h_ax)
