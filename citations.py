@@ -197,15 +197,17 @@ label_end(h_ax, h_wos.Year_frac.iloc[-1], h_wos.WoS.iloc[-1], WOS, -1)
 style_x_axis(h_ax)
 h_ax.set_ylabel('h-index')
 
-# One legend for both panels, inside the corner the h-index steps leave empty.
-# borderaxespad keeps it clear of the y-axis instead of straddling it.
-h_ax.legend(loc='upper left', frameon=False, fontsize=6.5, handlelength=1.2,
-            handletextpad=0.45, borderpad=0.0, labelspacing=0.3,
-            borderaxespad=0.6)
-
 sns.despine(fig, ax=cit_ax)
 sns.despine(fig, ax=h_ax)
-fig.tight_layout(pad=0.35, w_pad=1.2)
+fig.tight_layout(pad=0.35, w_pad=1.2, rect=(0, 0, 1, 0.90))
+
+# One legend for both panels, spanning them above rather than sitting inside
+# either one. Both axes label their lines; take the handles from one of them so
+# the entries are not repeated.
+fig.legend(*cit_ax.get_legend_handles_labels(),
+           loc='upper center', bbox_to_anchor=(0.5, 1.005), ncol=2,
+           frameon=False, fontsize=7, handlelength=1.4,
+           columnspacing=1.6, handletextpad=0.5)
 fig.savefig('citations-h-index.pdf')
 
 print(f'Citations: {cumulative_gscholar[-1]:,} (Google Scholar); '
