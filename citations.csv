@@ -6,7 +6,7 @@
 # Google Scholar reports no per-year breakdown before 2014. The 2013 Google
 # value is therefore its total for 2013 and everything earlier, not for 2013
 # alone. That is exact rather than approximate: the per-year counts from 2014
-# on, plus this residual, come to the 27,391 total Scholar reports.
+# on, plus this residual, come to the 28,899 total Scholar reports.
 #
 # The plot starts at PLOT_FROM and folds every earlier row into its starting
 # point, so the mixed meaning of that one cell never reaches the figure. A
@@ -19,17 +19,17 @@ Year,Months,Google,WoS
 2010,12,,4
 2011,12,,19
 2012,12,,21
-2013,12,491,24
+2013,12,541,24
 2014,12,123,52
-2015,12,266,123
-2016,12,528,242
+2015,12,265,123
+2016,12,532,241
 2017,12,628,307
-2018,12,944,495
-2019,12,1510,915
-2020,12,2224,1309
-2021,12,2956,1926
-2022,12,3306,2164
-2023,12,3261,2046
-2024,12,3546,2355
-2025,12,4240,2879
-2026,8,3368,2069
+2018,12,949,495
+2019,12,1521,915
+2020,12,2238,1304
+2021,12,2966,1924
+2022,12,3327,2166
+2023,12,3275,2051
+2024,12,3567,2369
+2025,12,4243,2872
+2026,11,4724,2922
